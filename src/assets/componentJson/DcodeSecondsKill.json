@@ -1,0 +1,202 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "秒杀组件配置",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "grid",
+                      "controlItemParam": {
+                          "label": "列表样式",
+                          "id": "rowType",
+                          "type": "grid",
+                          "defaultValue": "horizontal",
+                          "inline": true,
+                          "buttonStyle": "icon",
+                          "data": [
+                              {
+                                  "label": "一行一个",
+                                  "value": "horizontalBig",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/2.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/2_2.png"
+                              },
+                              {
+                                  "label": "一行一个",
+                                  "value": "horizontal",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/22.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/21.png"
+                              },
+                              {
+                                  "label": "一行两个",
+                                  "value": "vertical",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1_1.png"
+                              },
+                              {
+                                  "label": "横滑列表",
+                                  "value": "verticalSlide",
+                                  "src": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/5.png",
+                                  "srcSelected": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/5_5.png"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "goodsName",
+                              "price",
+                              "linePrice",
+                              "countDown",
+                              "saleCount",
+                              "progress",
+                              "robNumber",
+                              "activityTag"
+                          ],
+                          "data": [
+                              {
+                                  "label": "商品原价",
+                                  "value": "linePrice"
+                              },
+                              {
+                                  "label": "已抢件数",
+                                  "value": "robNumber"
+                              },
+                              {
+                                  "label": "进度条",
+                                  "value": "progress"
+                              },
+                              {
+                                  "label": "活动标签",
+                                  "value": "activityTag"
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "label": "选择活动",
+                      "text": "添加",
+                      "id": "activity",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {
+                          "width": 900
+                      },
+                      "listPage": {
+                          "requestParam": {
+                              "url": "xx",
+                              "method": "GET",
+                              "filterEmpty": true,
+                              "headers": {},
+                              "data": {
+                                  "status": 3,
+                                  "type": "platformActivity"
+                              }
+                          },
+                          "tableParam": {
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "活动名称",
+                                      "dataIndex": "activityName"
+                                  },
+                                  {
+                                      "title": "活动编号",
+                                      "dataIndex": "activityCode"
+                                  },
+                                  {
+                                      "title": "预热开始",
+                                      "dataIndex": "preheatStartTime"
+                                  },
+                                  {
+                                      "title": "活动开始",
+                                      "dataIndex": "beginTime"
+                                  },
+                                  {
+                                      "title": "活动结束",
+                                      "dataIndex": "endTime"
+                                  }
+                              ]
+                          },
+                          "tabsParam": {
+                              "tabPanes": [
+                                  {
+                                      "tab": "未开始",
+                                      "key": "READY"
+                                  },
+                                  {
+                                      "tab": "进行中",
+                                      "key": "ACTIVATE"
+                                  }
+                              ]
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityName",
+                                          "label": "活动名称",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityCode",
+                                          "label": "活动编号",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "activityName",
+                          "text": "activityName",
+                          "preheatStartTime": "preheatStartTime",
+                          "beginTime": "beginTime",
+                          "dataIndex": "endTime",
+                          "id": "id"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": false,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

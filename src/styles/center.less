@@ -1,0 +1,150 @@
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.center-panel {
+  width: 375px;
+  height: 90%;
+  margin: 20px;
+  background-color: #ffffff;
+  .top {
+    left: 0;
+    width: 100%;
+    z-index: 900;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    color: #000;
+    .center {
+      flex: 1;
+      text-align: center;   
+    }
+    .nav .left, .nav .right {
+      width: 24px;
+    }
+  }
+}
+
+.draggable-content {
+  min-height   : 12px;
+  position     : relative;
+  box-sizing   : border-box;
+  border       : 1px dashed rgba(0, 0, 0, 0);
+  &:hover {
+    border-color: red;
+    .remove-draggable {
+      display: inline-flex;
+      z-index: 998;
+    }
+  }
+  .editable {
+    min-height: 6px;
+  }
+  .remove-draggable {
+    // position: absolute;
+    // cursor: pointer;
+    // right: 4px;
+    // top: 2px;
+    // color: red;
+    // z-index: 999;
+    right: 4px;
+    display: none;
+    min-height:12px;
+    max-height: 25px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+    color: red;
+    margin-bottom: .5rem;
+    background-color: '#f5f7fa';
+    height: calc(100% - 8px);
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    min-width: 116px;
+    width: 100%;
+    padding: 8px 12px;
+    .location-icon {
+      margin-right: 4px;
+    }
+    .location-content {
+      width: 80px;
+      margin-right: 4px;
+    }
+  }
+
+  .img-box {
+    padding: 4px;
+    height: 100%;
+  }
+}
+
+.page_ngine_outside {
+  border-radius: 5px;
+  width: 175px;
+  min-height   : 340px;
+  position     : fixed;
+  bottom: calc( 14% - 5px );
+  // right: 25px;
+  // z-index: 1000;
+  box-sizing   : border-box;
+  border       : 1px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    border-color: red;
+
+    .page_ngine_outside_edit {
+      display: inline-flex;
+      z-index: 9999;
+    }
+  }
+
+  .mask {
+    left      : 0;
+    top       : 0;
+    z-index   : 1000;
+    width     : 100%;
+    height    : 100%;
+    position  : absolute;
+    background: transparent;
+  }
+
+  .page_ngine_outside_edit {
+    right          : 8px;
+    display        : none;
+    max-height     : 60px;
+    align-items    : center;
+    justify-content: center;
+    overflow       : hidden;
+    position       : absolute;
+    box-sizing     : border-box;
+    height         : calc(100% - 16px);
+  }
+}
+
+.adm-center-popup-wrap {
+  left: 47% !important;
+}
+
+.dialog-title {
+  padding: 20px 24px 9px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.dialog-delete {
+  padding: 0 24px 12px;
+  min-height: 40px;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

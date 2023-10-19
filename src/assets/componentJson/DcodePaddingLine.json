@@ -1,0 +1,32 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "辅助分割",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "空白高度",
+                          "id": "height",
+                          "defaultValue": "24",
+                          "max": "200",
+                          "min": "1"
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

@@ -1,0 +1,4458 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": [
+        {
+          "code": "110000000000",
+          "value": "北京市",
+          "key": "110000000000",
+          "title": "北京市",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "110101000000",
+              "value": "东城",
+              "key": "110101000000",
+              "title": "东城",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110102000000",
+              "value": "西城区",
+              "key": "110102000000",
+              "title": "西城区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110105000000",
+              "value": "朝阳区",
+              "key": "110105000000",
+              "title": "朝阳区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110106000000",
+              "value": "丰台区",
+              "key": "110106000000",
+              "title": "丰台区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110107000000",
+              "value": "石景山区",
+              "key": "110107000000",
+              "title": "石景山区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110108000000",
+              "value": "海淀区",
+              "key": "110108000000",
+              "title": "海淀区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110109000000",
+              "value": "门头沟区",
+              "key": "110109000000",
+              "title": "门头沟区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110111000000",
+              "value": "房山区",
+              "key": "110111000000",
+              "title": "房山区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110112000000",
+              "value": "通州区",
+              "key": "110112000000",
+              "title": "通州区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110113000000",
+              "value": "顺义区",
+              "key": "110113000000",
+              "title": "顺义区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110114000000",
+              "value": "昌平区",
+              "key": "110114000000",
+              "title": "昌平区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110115000000",
+              "value": "大兴区",
+              "key": "110115000000",
+              "title": "大兴区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110116000000",
+              "value": "怀柔区",
+              "key": "110116000000",
+              "title": "怀柔区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110117000000",
+              "value": "平谷区",
+              "key": "110117000000",
+              "title": "平谷区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110118000000",
+              "value": "密云区",
+              "key": "110118000000",
+              "title": "密云区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "110119000000",
+              "value": "延庆区",
+              "key": "110119000000",
+              "title": "延庆区",
+              "disabled": false,
+              "parentCode": "110000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "120000000000",
+          "value": "天津市",
+          "key": "120000000000",
+          "title": "天津市",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "120101000000",
+              "value": "和平区",
+              "key": "120101000000",
+              "title": "和平区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120102000000",
+              "value": "河东区",
+              "key": "120102000000",
+              "title": "河东区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120103000000",
+              "value": "河西区",
+              "key": "120103000000",
+              "title": "河西区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120104000000",
+              "value": "南开区",
+              "key": "120104000000",
+              "title": "南开区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120105000000",
+              "value": "河北区",
+              "key": "120105000000",
+              "title": "河北区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120106000000",
+              "value": "红桥区",
+              "key": "120106000000",
+              "title": "红桥区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120110000000",
+              "value": "东丽区",
+              "key": "120110000000",
+              "title": "东丽区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120111000000",
+              "value": "西青区",
+              "key": "120111000000",
+              "title": "西青区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120112000000",
+              "value": "津南区",
+              "key": "120112000000",
+              "title": "津南区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120113000000",
+              "value": "北辰区",
+              "key": "120113000000",
+              "title": "北辰区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120114000000",
+              "value": "武清区",
+              "key": "120114000000",
+              "title": "武清区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120115000000",
+              "value": "宝坻区",
+              "key": "120115000000",
+              "title": "宝坻区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120116000000",
+              "value": "滨海新区",
+              "key": "120116000000",
+              "title": "滨海新区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120117000000",
+              "value": "宁河区",
+              "key": "120117000000",
+              "title": "宁河区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120118000000",
+              "value": "静海区",
+              "key": "120118000000",
+              "title": "静海区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "120119000000",
+              "value": "蓟州区",
+              "key": "120119000000",
+              "title": "蓟州区",
+              "disabled": false,
+              "parentCode": "120000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "130000000000",
+          "value": "河北省",
+          "key": "130000000000",
+          "title": "河北省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "130100000000",
+              "value": "石家庄市",
+              "key": "130100000000",
+              "title": "石家庄市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130200000000",
+              "value": "唐山市",
+              "key": "130200000000",
+              "title": "唐山市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130300000000",
+              "value": "秦皇岛市",
+              "key": "130300000000",
+              "title": "秦皇岛市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130400000000",
+              "value": "邯郸市",
+              "key": "130400000000",
+              "title": "邯郸市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130500000000",
+              "value": "邢台市",
+              "key": "130500000000",
+              "title": "邢台市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130600000000",
+              "value": "保定市",
+              "key": "130600000000",
+              "title": "保定市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130700000000",
+              "value": "张家口市",
+              "key": "130700000000",
+              "title": "张家口市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130800000000",
+              "value": "承德市",
+              "key": "130800000000",
+              "title": "承德市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "130900000000",
+              "value": "沧州市",
+              "key": "130900000000",
+              "title": "沧州市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "131000000000",
+              "value": "廊坊市",
+              "key": "131000000000",
+              "title": "廊坊市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "131100000000",
+              "value": "衡水市",
+              "key": "131100000000",
+              "title": "衡水市",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "139000000000",
+              "value": "省直辖县级行政区划",
+              "key": "139000000000",
+              "title": "省直辖县级行政区划",
+              "disabled": false,
+              "parentCode": "130000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "140000000000",
+          "value": "山西省",
+          "key": "140000000000",
+          "title": "山西省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "140100000000",
+              "value": "太原市",
+              "key": "140100000000",
+              "title": "太原市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140200000000",
+              "value": "大同市",
+              "key": "140200000000",
+              "title": "大同市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140300000000",
+              "value": "阳泉市",
+              "key": "140300000000",
+              "title": "阳泉市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140400000000",
+              "value": "长治市",
+              "key": "140400000000",
+              "title": "长治市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140500000000",
+              "value": "晋城市",
+              "key": "140500000000",
+              "title": "晋城市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140600000000",
+              "value": "朔州市",
+              "key": "140600000000",
+              "title": "朔州市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140700000000",
+              "value": "晋中市",
+              "key": "140700000000",
+              "title": "晋中市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140800000000",
+              "value": "运城市",
+              "key": "140800000000",
+              "title": "运城市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "140900000000",
+              "value": "忻州市",
+              "key": "140900000000",
+              "title": "忻州市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "141000000000",
+              "value": "临汾市",
+              "key": "141000000000",
+              "title": "临汾市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "141100000000",
+              "value": "吕梁市",
+              "key": "141100000000",
+              "title": "吕梁市",
+              "disabled": false,
+              "parentCode": "140000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "150000000000",
+          "value": "内蒙古自治区",
+          "key": "150000000000",
+          "title": "内蒙古自治区",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "150100000000",
+              "value": "呼和浩特市",
+              "key": "150100000000",
+              "title": "呼和浩特市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150200000000",
+              "value": "包头市",
+              "key": "150200000000",
+              "title": "包头市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150300000000",
+              "value": "乌海市",
+              "key": "150300000000",
+              "title": "乌海市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150400000000",
+              "value": "赤峰市",
+              "key": "150400000000",
+              "title": "赤峰市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150500000000",
+              "value": "通辽市",
+              "key": "150500000000",
+              "title": "通辽市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150600000000",
+              "value": "鄂尔多斯市",
+              "key": "150600000000",
+              "title": "鄂尔多斯市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150700000000",
+              "value": "呼伦贝尔市",
+              "key": "150700000000",
+              "title": "呼伦贝尔市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150800000000",
+              "value": "巴彦淖尔市",
+              "key": "150800000000",
+              "title": "巴彦淖尔市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "150900000000",
+              "value": "乌兰察布市",
+              "key": "150900000000",
+              "title": "乌兰察布市",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "152200000000",
+              "value": "兴安盟",
+              "key": "152200000000",
+              "title": "兴安盟",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "152500000000",
+              "value": "锡林郭勒盟",
+              "key": "152500000000",
+              "title": "锡林郭勒盟",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "152900000000",
+              "value": "阿拉善盟",
+              "key": "152900000000",
+              "title": "阿拉善盟",
+              "disabled": false,
+              "parentCode": "150000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "210000000000",
+          "value": "辽宁省",
+          "key": "210000000000",
+          "title": "辽宁省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "210100000000",
+              "value": "沈阳市",
+              "key": "210100000000",
+              "title": "沈阳市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210200000000",
+              "value": "大连市",
+              "key": "210200000000",
+              "title": "大连市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210300000000",
+              "value": "鞍山市",
+              "key": "210300000000",
+              "title": "鞍山市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210400000000",
+              "value": "抚顺市",
+              "key": "210400000000",
+              "title": "抚顺市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210500000000",
+              "value": "本溪市",
+              "key": "210500000000",
+              "title": "本溪市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210600000000",
+              "value": "丹东市",
+              "key": "210600000000",
+              "title": "丹东市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210700000000",
+              "value": "锦州市",
+              "key": "210700000000",
+              "title": "锦州市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210800000000",
+              "value": "营口市",
+              "key": "210800000000",
+              "title": "营口市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "210900000000",
+              "value": "阜新市",
+              "key": "210900000000",
+              "title": "阜新市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "211000000000",
+              "value": "辽阳市",
+              "key": "211000000000",
+              "title": "辽阳市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "211100000000",
+              "value": "盘锦市",
+              "key": "211100000000",
+              "title": "盘锦市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "211200000000",
+              "value": "铁岭市",
+              "key": "211200000000",
+              "title": "铁岭市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "211300000000",
+              "value": "朝阳市",
+              "key": "211300000000",
+              "title": "朝阳市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "211400000000",
+              "value": "葫芦岛市",
+              "key": "211400000000",
+              "title": "葫芦岛市",
+              "disabled": false,
+              "parentCode": "210000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "220000000000",
+          "value": "吉林省",
+          "key": "220000000000",
+          "title": "吉林省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "220100000000",
+              "value": "长春市",
+              "key": "220100000000",
+              "title": "长春市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220200000000",
+              "value": "吉林市",
+              "key": "220200000000",
+              "title": "吉林市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220300000000",
+              "value": "四平市",
+              "key": "220300000000",
+              "title": "四平市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220400000000",
+              "value": "辽源市",
+              "key": "220400000000",
+              "title": "辽源市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220500000000",
+              "value": "通化市",
+              "key": "220500000000",
+              "title": "通化市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220600000000",
+              "value": "白山市",
+              "key": "220600000000",
+              "title": "白山市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220700000000",
+              "value": "松原市",
+              "key": "220700000000",
+              "title": "松原市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "220800000000",
+              "value": "白城市",
+              "key": "220800000000",
+              "title": "白城市",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "222400000000",
+              "value": "延边朝鲜族自治州",
+              "key": "222400000000",
+              "title": "延边朝鲜族自治州",
+              "disabled": false,
+              "parentCode": "220000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "230000000000",
+          "value": "黑龙江省",
+          "key": "230000000000",
+          "title": "黑龙江省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "230100000000",
+              "value": "哈尔滨市",
+              "key": "230100000000",
+              "title": "哈尔滨市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230200000000",
+              "value": "齐齐哈尔市",
+              "key": "230200000000",
+              "title": "齐齐哈尔市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230300000000",
+              "value": "鸡西市",
+              "key": "230300000000",
+              "title": "鸡西市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230400000000",
+              "value": "鹤岗市",
+              "key": "230400000000",
+              "title": "鹤岗市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230500000000",
+              "value": "双鸭山市",
+              "key": "230500000000",
+              "title": "双鸭山市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230600000000",
+              "value": "大庆市",
+              "key": "230600000000",
+              "title": "大庆市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230700000000",
+              "value": "伊春市",
+              "key": "230700000000",
+              "title": "伊春市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230800000000",
+              "value": "佳木斯市",
+              "key": "230800000000",
+              "title": "佳木斯市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "230900000000",
+              "value": "七台河市",
+              "key": "230900000000",
+              "title": "七台河市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "231000000000",
+              "value": "牡丹江市",
+              "key": "231000000000",
+              "title": "牡丹江市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "231100000000",
+              "value": "黑河市",
+              "key": "231100000000",
+              "title": "黑河市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "231200000000",
+              "value": "绥化市",
+              "key": "231200000000",
+              "title": "绥化市",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "232700000000",
+              "value": "大兴安岭地区",
+              "key": "232700000000",
+              "title": "大兴安岭地区",
+              "disabled": false,
+              "parentCode": "230000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "310000000000",
+          "value": "上海市",
+          "key": "310000000000",
+          "title": "上海市",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "310101000000",
+              "value": "黄浦区",
+              "key": "310101000000",
+              "title": "黄浦区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310104000000",
+              "value": "徐汇区",
+              "key": "310104000000",
+              "title": "徐汇区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310105000000",
+              "value": "长宁区",
+              "key": "310105000000",
+              "title": "长宁区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310106000000",
+              "value": "静安区",
+              "key": "310106000000",
+              "title": "静安区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310107000000",
+              "value": "普陀区",
+              "key": "310107000000",
+              "title": "普陀区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310109000000",
+              "value": "虹口区",
+              "key": "310109000000",
+              "title": "虹口区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310110000000",
+              "value": "杨浦区",
+              "key": "310110000000",
+              "title": "杨浦区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310112000000",
+              "value": "闵行区",
+              "key": "310112000000",
+              "title": "闵行区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310113000000",
+              "value": "宝山区",
+              "key": "310113000000",
+              "title": "宝山区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310114000000",
+              "value": "嘉定区",
+              "key": "310114000000",
+              "title": "嘉定区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310115000000",
+              "value": "浦东新区",
+              "key": "310115000000",
+              "title": "浦东新区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310116000000",
+              "value": "金山区",
+              "key": "310116000000",
+              "title": "金山区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310117000000",
+              "value": "松江区",
+              "key": "310117000000",
+              "title": "松江区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310118000000",
+              "value": "青浦区",
+              "key": "310118000000",
+              "title": "青浦区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310120000000",
+              "value": "奉贤区",
+              "key": "310120000000",
+              "title": "奉贤区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "310151000000",
+              "value": "崇明区",
+              "key": "310151000000",
+              "title": "崇明区",
+              "disabled": false,
+              "parentCode": "310000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "320000000000",
+          "value": "江苏省",
+          "key": "320000000000",
+          "title": "江苏省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "320100000000",
+              "value": "南京市",
+              "key": "320100000000",
+              "title": "南京市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320200000000",
+              "value": "无锡市",
+              "key": "320200000000",
+              "title": "无锡市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320300000000",
+              "value": "徐州市",
+              "key": "320300000000",
+              "title": "徐州市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320400000000",
+              "value": "常州市",
+              "key": "320400000000",
+              "title": "常州市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320500000000",
+              "value": "苏州市",
+              "key": "320500000000",
+              "title": "苏州市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320600000000",
+              "value": "南通市",
+              "key": "320600000000",
+              "title": "南通市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320700000000",
+              "value": "连云港市",
+              "key": "320700000000",
+              "title": "连云港市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320800000000",
+              "value": "淮安市",
+              "key": "320800000000",
+              "title": "淮安市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "320900000000",
+              "value": "盐城市",
+              "key": "320900000000",
+              "title": "盐城市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "321000000000",
+              "value": "扬州市",
+              "key": "321000000000",
+              "title": "扬州市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "321100000000",
+              "value": "镇江市",
+              "key": "321100000000",
+              "title": "镇江市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "321200000000",
+              "value": "泰州市",
+              "key": "321200000000",
+              "title": "泰州市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "321300000000",
+              "value": "宿迁市",
+              "key": "321300000000",
+              "title": "宿迁市",
+              "disabled": false,
+              "parentCode": "320000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "330000000000",
+          "value": "浙江省",
+          "key": "330000000000",
+          "title": "浙江省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "330100000000",
+              "value": "杭州市",
+              "key": "330100000000",
+              "title": "杭州市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330200000000",
+              "value": "宁波市",
+              "key": "330200000000",
+              "title": "宁波市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330300000000",
+              "value": "温州市",
+              "key": "330300000000",
+              "title": "温州市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330400000000",
+              "value": "嘉兴市",
+              "key": "330400000000",
+              "title": "嘉兴市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330500000000",
+              "value": "湖州市",
+              "key": "330500000000",
+              "title": "湖州市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330600000000",
+              "value": "绍兴市",
+              "key": "330600000000",
+              "title": "绍兴市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330700000000",
+              "value": "金华市",
+              "key": "330700000000",
+              "title": "金华市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330800000000",
+              "value": "衢州市",
+              "key": "330800000000",
+              "title": "衢州市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "330900000000",
+              "value": "舟山市",
+              "key": "330900000000",
+              "title": "舟山市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "331000000000",
+              "value": "台州市",
+              "key": "331000000000",
+              "title": "台州市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "331100000000",
+              "value": "丽水市",
+              "key": "331100000000",
+              "title": "丽水市",
+              "disabled": false,
+              "parentCode": "330000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "340000000000",
+          "value": "安徽省",
+          "key": "340000000000",
+          "title": "安徽省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "340100000000",
+              "value": "合肥市",
+              "key": "340100000000",
+              "title": "合肥市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340200000000",
+              "value": "芜湖市",
+              "key": "340200000000",
+              "title": "芜湖市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340300000000",
+              "value": "蚌埠市",
+              "key": "340300000000",
+              "title": "蚌埠市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340400000000",
+              "value": "淮南市",
+              "key": "340400000000",
+              "title": "淮南市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340500000000",
+              "value": "马鞍山市",
+              "key": "340500000000",
+              "title": "马鞍山市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340600000000",
+              "value": "淮北市",
+              "key": "340600000000",
+              "title": "淮北市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340700000000",
+              "value": "铜陵市",
+              "key": "340700000000",
+              "title": "铜陵市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "340800000000",
+              "value": "安庆市",
+              "key": "340800000000",
+              "title": "安庆市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341000000000",
+              "value": "黄山市",
+              "key": "341000000000",
+              "title": "黄山市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341100000000",
+              "value": "滁州市",
+              "key": "341100000000",
+              "title": "滁州市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341200000000",
+              "value": "阜阳市",
+              "key": "341200000000",
+              "title": "阜阳市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341300000000",
+              "value": "宿州市",
+              "key": "341300000000",
+              "title": "宿州市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341500000000",
+              "value": "六安市",
+              "key": "341500000000",
+              "title": "六安市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341600000000",
+              "value": "亳州市",
+              "key": "341600000000",
+              "title": "亳州市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341700000000",
+              "value": "池州市",
+              "key": "341700000000",
+              "title": "池州市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "341800000000",
+              "value": "宣城市",
+              "key": "341800000000",
+              "title": "宣城市",
+              "disabled": false,
+              "parentCode": "340000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "350000000000",
+          "value": "福建省",
+          "key": "350000000000",
+          "title": "福建省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "350100000000",
+              "value": "福州市",
+              "key": "350100000000",
+              "title": "福州市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350200000000",
+              "value": "厦门市",
+              "key": "350200000000",
+              "title": "厦门市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350300000000",
+              "value": "莆田市",
+              "key": "350300000000",
+              "title": "莆田市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350400000000",
+              "value": "三明市",
+              "key": "350400000000",
+              "title": "三明市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350500000000",
+              "value": "泉州市",
+              "key": "350500000000",
+              "title": "泉州市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350600000000",
+              "value": "漳州市",
+              "key": "350600000000",
+              "title": "漳州市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350700000000",
+              "value": "南平市",
+              "key": "350700000000",
+              "title": "南平市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350800000000",
+              "value": "龙岩市",
+              "key": "350800000000",
+              "title": "龙岩市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "350900000000",
+              "value": "宁德市",
+              "key": "350900000000",
+              "title": "宁德市",
+              "disabled": false,
+              "parentCode": "350000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "360000000000",
+          "value": "江西省",
+          "key": "360000000000",
+          "title": "江西省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "360100000000",
+              "value": "南昌市",
+              "key": "360100000000",
+              "title": "南昌市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360200000000",
+              "value": "景德镇市",
+              "key": "360200000000",
+              "title": "景德镇市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360300000000",
+              "value": "萍乡市",
+              "key": "360300000000",
+              "title": "萍乡市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360400000000",
+              "value": "九江市",
+              "key": "360400000000",
+              "title": "九江市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360500000000",
+              "value": "新余市",
+              "key": "360500000000",
+              "title": "新余市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360600000000",
+              "value": "鹰潭市",
+              "key": "360600000000",
+              "title": "鹰潭市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360700000000",
+              "value": "赣州市",
+              "key": "360700000000",
+              "title": "赣州市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360800000000",
+              "value": "吉安市",
+              "key": "360800000000",
+              "title": "吉安市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "360900000000",
+              "value": "宜春市",
+              "key": "360900000000",
+              "title": "宜春市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "361000000000",
+              "value": "抚州市",
+              "key": "361000000000",
+              "title": "抚州市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "361100000000",
+              "value": "上饶市",
+              "key": "361100000000",
+              "title": "上饶市",
+              "disabled": false,
+              "parentCode": "360000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "370000000000",
+          "value": "山东省",
+          "key": "370000000000",
+          "title": "山东省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "370100000000",
+              "value": "济南市",
+              "key": "370100000000",
+              "title": "济南市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370200000000",
+              "value": "青岛市",
+              "key": "370200000000",
+              "title": "青岛市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370300000000",
+              "value": "淄博市",
+              "key": "370300000000",
+              "title": "淄博市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370400000000",
+              "value": "枣庄市",
+              "key": "370400000000",
+              "title": "枣庄市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370500000000",
+              "value": "东营市",
+              "key": "370500000000",
+              "title": "东营市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370600000000",
+              "value": "烟台市",
+              "key": "370600000000",
+              "title": "烟台市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370700000000",
+              "value": "潍坊市",
+              "key": "370700000000",
+              "title": "潍坊市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370800000000",
+              "value": "济宁市",
+              "key": "370800000000",
+              "title": "济宁市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "370900000000",
+              "value": "泰安市",
+              "key": "370900000000",
+              "title": "泰安市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371000000000",
+              "value": "威海市",
+              "key": "371000000000",
+              "title": "威海市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371100000000",
+              "value": "日照市",
+              "key": "371100000000",
+              "title": "日照市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371200000000",
+              "value": "莱芜市",
+              "key": "371200000000",
+              "title": "莱芜市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371300000000",
+              "value": "临沂市",
+              "key": "371300000000",
+              "title": "临沂市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371400000000",
+              "value": "德州市",
+              "key": "371400000000",
+              "title": "德州市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371500000000",
+              "value": "聊城市",
+              "key": "371500000000",
+              "title": "聊城市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371600000000",
+              "value": "滨州市",
+              "key": "371600000000",
+              "title": "滨州市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "371700000000",
+              "value": "菏泽市",
+              "key": "371700000000",
+              "title": "菏泽市",
+              "disabled": false,
+              "parentCode": "370000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "410000000000",
+          "value": "河南省",
+          "key": "410000000000",
+          "title": "河南省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "410100000000",
+              "value": "郑州市",
+              "key": "410100000000",
+              "title": "郑州市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410200000000",
+              "value": "开封市",
+              "key": "410200000000",
+              "title": "开封市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410300000000",
+              "value": "洛阳市",
+              "key": "410300000000",
+              "title": "洛阳市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410400000000",
+              "value": "平顶山市",
+              "key": "410400000000",
+              "title": "平顶山市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410500000000",
+              "value": "安阳市",
+              "key": "410500000000",
+              "title": "安阳市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410600000000",
+              "value": "鹤壁市",
+              "key": "410600000000",
+              "title": "鹤壁市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410700000000",
+              "value": "新乡市",
+              "key": "410700000000",
+              "title": "新乡市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410800000000",
+              "value": "焦作市",
+              "key": "410800000000",
+              "title": "焦作市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "410900000000",
+              "value": "濮阳市",
+              "key": "410900000000",
+              "title": "濮阳市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411000000000",
+              "value": "许昌市",
+              "key": "411000000000",
+              "title": "许昌市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411100000000",
+              "value": "漯河市",
+              "key": "411100000000",
+              "title": "漯河市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411200000000",
+              "value": "三门峡市",
+              "key": "411200000000",
+              "title": "三门峡市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411300000000",
+              "value": "南阳市",
+              "key": "411300000000",
+              "title": "南阳市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411400000000",
+              "value": "商丘市",
+              "key": "411400000000",
+              "title": "商丘市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411500000000",
+              "value": "信阳市",
+              "key": "411500000000",
+              "title": "信阳市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411600000000",
+              "value": "周口市",
+              "key": "411600000000",
+              "title": "周口市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "411700000000",
+              "value": "驻马店市",
+              "key": "411700000000",
+              "title": "驻马店市",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "419000000000",
+              "value": "省直辖县级行政区划",
+              "key": "419000000000",
+              "title": "省直辖县级行政区划",
+              "disabled": false,
+              "parentCode": "410000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "420000000000",
+          "value": "湖北省",
+          "key": "420000000000",
+          "title": "湖北省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "420100000000",
+              "value": "武汉市",
+              "key": "420100000000",
+              "title": "武汉市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420200000000",
+              "value": "黄石市",
+              "key": "420200000000",
+              "title": "黄石市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420300000000",
+              "value": "十堰市",
+              "key": "420300000000",
+              "title": "十堰市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420500000000",
+              "value": "宜昌市",
+              "key": "420500000000",
+              "title": "宜昌市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420600000000",
+              "value": "襄阳市",
+              "key": "420600000000",
+              "title": "襄阳市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420700000000",
+              "value": "鄂州市",
+              "key": "420700000000",
+              "title": "鄂州市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420800000000",
+              "value": "荆门市",
+              "key": "420800000000",
+              "title": "荆门市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "420900000000",
+              "value": "孝感市",
+              "key": "420900000000",
+              "title": "孝感市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "421000000000",
+              "value": "荆州市",
+              "key": "421000000000",
+              "title": "荆州市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "421100000000",
+              "value": "黄冈市",
+              "key": "421100000000",
+              "title": "黄冈市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "421200000000",
+              "value": "咸宁市",
+              "key": "421200000000",
+              "title": "咸宁市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "421300000000",
+              "value": "随州市",
+              "key": "421300000000",
+              "title": "随州市",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "422800000000",
+              "value": "恩施土家族苗族自治州",
+              "key": "422800000000",
+              "title": "恩施土家族苗族自治州",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "429000000000",
+              "value": "省直辖县级行政区划",
+              "key": "429000000000",
+              "title": "省直辖县级行政区划",
+              "disabled": false,
+              "parentCode": "420000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "430000000000",
+          "value": "湖南省",
+          "key": "430000000000",
+          "title": "湖南省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "430100000000",
+              "value": "长沙市",
+              "key": "430100000000",
+              "title": "长沙市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430200000000",
+              "value": "株洲市",
+              "key": "430200000000",
+              "title": "株洲市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430300000000",
+              "value": "湘潭市",
+              "key": "430300000000",
+              "title": "湘潭市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430400000000",
+              "value": "衡阳市",
+              "key": "430400000000",
+              "title": "衡阳市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430500000000",
+              "value": "邵阳市",
+              "key": "430500000000",
+              "title": "邵阳市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430600000000",
+              "value": "岳阳市",
+              "key": "430600000000",
+              "title": "岳阳市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430700000000",
+              "value": "常德市",
+              "key": "430700000000",
+              "title": "常德市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430800000000",
+              "value": "张家界市",
+              "key": "430800000000",
+              "title": "张家界市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "430900000000",
+              "value": "益阳市",
+              "key": "430900000000",
+              "title": "益阳市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "431000000000",
+              "value": "郴州市",
+              "key": "431000000000",
+              "title": "郴州市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "431100000000",
+              "value": "永州市",
+              "key": "431100000000",
+              "title": "永州市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "431200000000",
+              "value": "怀化市",
+              "key": "431200000000",
+              "title": "怀化市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "431300000000",
+              "value": "娄底市",
+              "key": "431300000000",
+              "title": "娄底市",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "433100000000",
+              "value": "湘西土家族苗族自治州",
+              "key": "433100000000",
+              "title": "湘西土家族苗族自治州",
+              "disabled": false,
+              "parentCode": "430000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "440000000000",
+          "value": "广东省",
+          "key": "440000000000",
+          "title": "广东省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "440100000000",
+              "value": "广州市",
+              "key": "440100000000",
+              "title": "广州市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440200000000",
+              "value": "韶关市",
+              "key": "440200000000",
+              "title": "韶关市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440300000000",
+              "value": "深圳市",
+              "key": "440300000000",
+              "title": "深圳市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440400000000",
+              "value": "珠海市",
+              "key": "440400000000",
+              "title": "珠海市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440500000000",
+              "value": "汕头市",
+              "key": "440500000000",
+              "title": "汕头市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440600000000",
+              "value": "佛山市",
+              "key": "440600000000",
+              "title": "佛山市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440700000000",
+              "value": "江门市",
+              "key": "440700000000",
+              "title": "江门市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440800000000",
+              "value": "湛江市",
+              "key": "440800000000",
+              "title": "湛江市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "440900000000",
+              "value": "茂名市",
+              "key": "440900000000",
+              "title": "茂名市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441200000000",
+              "value": "肇庆市",
+              "key": "441200000000",
+              "title": "肇庆市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441300000000",
+              "value": "惠州市",
+              "key": "441300000000",
+              "title": "惠州市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441400000000",
+              "value": "梅州市",
+              "key": "441400000000",
+              "title": "梅州市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441500000000",
+              "value": "汕尾市",
+              "key": "441500000000",
+              "title": "汕尾市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441600000000",
+              "value": "河源市",
+              "key": "441600000000",
+              "title": "河源市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441700000000",
+              "value": "阳江市",
+              "key": "441700000000",
+              "title": "阳江市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441800000000",
+              "value": "清远市",
+              "key": "441800000000",
+              "title": "清远市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "441900000000",
+              "value": "东莞市",
+              "key": "441900000000",
+              "title": "东莞市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "442000000000",
+              "value": "中山市",
+              "key": "442000000000",
+              "title": "中山市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "445100000000",
+              "value": "潮州市",
+              "key": "445100000000",
+              "title": "潮州市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "445200000000",
+              "value": "揭阳市",
+              "key": "445200000000",
+              "title": "揭阳市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "445300000000",
+              "value": "云浮市",
+              "key": "445300000000",
+              "title": "云浮市",
+              "disabled": false,
+              "parentCode": "440000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "450000000000",
+          "value": "广西壮族自治区",
+          "key": "450000000000",
+          "title": "广西壮族自治区",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "450100000000",
+              "value": "南宁市",
+              "key": "450100000000",
+              "title": "南宁市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450200000000",
+              "value": "柳州市",
+              "key": "450200000000",
+              "title": "柳州市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450300000000",
+              "value": "桂林市",
+              "key": "450300000000",
+              "title": "桂林市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450400000000",
+              "value": "梧州市",
+              "key": "450400000000",
+              "title": "梧州市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450500000000",
+              "value": "北海市",
+              "key": "450500000000",
+              "title": "北海市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450600000000",
+              "value": "防城港市",
+              "key": "450600000000",
+              "title": "防城港市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450700000000",
+              "value": "钦州市",
+              "key": "450700000000",
+              "title": "钦州市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450800000000",
+              "value": "贵港市",
+              "key": "450800000000",
+              "title": "贵港市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "450900000000",
+              "value": "玉林市",
+              "key": "450900000000",
+              "title": "玉林市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "451000000000",
+              "value": "百色市",
+              "key": "451000000000",
+              "title": "百色市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "451100000000",
+              "value": "贺州市",
+              "key": "451100000000",
+              "title": "贺州市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "451200000000",
+              "value": "河池市",
+              "key": "451200000000",
+              "title": "河池市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "451300000000",
+              "value": "来宾市",
+              "key": "451300000000",
+              "title": "来宾市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "451400000000",
+              "value": "崇左市",
+              "key": "451400000000",
+              "title": "崇左市",
+              "disabled": false,
+              "parentCode": "450000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "460000000000",
+          "value": "海南省",
+          "key": "460000000000",
+          "title": "海南省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "460100000000",
+              "value": "海口市",
+              "key": "460100000000",
+              "title": "海口市",
+              "disabled": false,
+              "parentCode": "460000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "460200000000",
+              "value": "三亚市",
+              "key": "460200000000",
+              "title": "三亚市",
+              "disabled": false,
+              "parentCode": "460000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "460300000000",
+              "value": "三沙市",
+              "key": "460300000000",
+              "title": "三沙市",
+              "disabled": false,
+              "parentCode": "460000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "460400000000",
+              "value": "儋州市",
+              "key": "460400000000",
+              "title": "儋州市",
+              "disabled": false,
+              "parentCode": "460000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "469000000000",
+              "value": "省直辖县级行政区划",
+              "key": "469000000000",
+              "title": "省直辖县级行政区划",
+              "disabled": false,
+              "parentCode": "460000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "500000000000",
+          "value": "重庆市",
+          "key": "500000000000",
+          "title": "重庆市",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "500101000000",
+              "value": "万州区",
+              "key": "500101000000",
+              "title": "万州区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500102000000",
+              "value": "涪陵区",
+              "key": "500102000000",
+              "title": "涪陵区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500103000000",
+              "value": "渝中区",
+              "key": "500103000000",
+              "title": "渝中区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500104000000",
+              "value": "大渡口区",
+              "key": "500104000000",
+              "title": "大渡口区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500105000000",
+              "value": "江北区",
+              "key": "500105000000",
+              "title": "江北区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500106000000",
+              "value": "沙坪坝区",
+              "key": "500106000000",
+              "title": "沙坪坝区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500107000000",
+              "value": "九龙坡区",
+              "key": "500107000000",
+              "title": "九龙坡区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500108000000",
+              "value": "南岸区",
+              "key": "500108000000",
+              "title": "南岸区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500109000000",
+              "value": "北碚区",
+              "key": "500109000000",
+              "title": "北碚区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500110000000",
+              "value": "綦江区",
+              "key": "500110000000",
+              "title": "綦江区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500111000000",
+              "value": "大足区",
+              "key": "500111000000",
+              "title": "大足区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500112000000",
+              "value": "渝北区",
+              "key": "500112000000",
+              "title": "渝北区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500113000000",
+              "value": "巴南区",
+              "key": "500113000000",
+              "title": "巴南区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500114000000",
+              "value": "黔江区",
+              "key": "500114000000",
+              "title": "黔江区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500115000000",
+              "value": "长寿区",
+              "key": "500115000000",
+              "title": "长寿区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500116000000",
+              "value": "江津区",
+              "key": "500116000000",
+              "title": "江津区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500117000000",
+              "value": "合川区",
+              "key": "500117000000",
+              "title": "合川区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500118000000",
+              "value": "永川区",
+              "key": "500118000000",
+              "title": "永川区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500119000000",
+              "value": "南川区",
+              "key": "500119000000",
+              "title": "南川区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500120000000",
+              "value": "璧山区",
+              "key": "500120000000",
+              "title": "璧山区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500151000000",
+              "value": "铜梁区",
+              "key": "500151000000",
+              "title": "铜梁区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500152000000",
+              "value": "潼南区",
+              "key": "500152000000",
+              "title": "潼南区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500153000000",
+              "value": "荣昌区",
+              "key": "500153000000",
+              "title": "荣昌区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "500154000000",
+              "value": "开州区",
+              "key": "500154000000",
+              "title": "开州区",
+              "disabled": false,
+              "parentCode": "500000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "510000000000",
+          "value": "四川省",
+          "key": "510000000000",
+          "title": "四川省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "510100000000",
+              "value": "成都市",
+              "key": "510100000000",
+              "title": "成都市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510300000000",
+              "value": "自贡市",
+              "key": "510300000000",
+              "title": "自贡市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510400000000",
+              "value": "攀枝花市",
+              "key": "510400000000",
+              "title": "攀枝花市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510500000000",
+              "value": "泸州市",
+              "key": "510500000000",
+              "title": "泸州市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510600000000",
+              "value": "德阳市",
+              "key": "510600000000",
+              "title": "德阳市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510700000000",
+              "value": "绵阳市",
+              "key": "510700000000",
+              "title": "绵阳市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510800000000",
+              "value": "广元市",
+              "key": "510800000000",
+              "title": "广元市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "510900000000",
+              "value": "遂宁市",
+              "key": "510900000000",
+              "title": "遂宁市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511000000000",
+              "value": "内江市",
+              "key": "511000000000",
+              "title": "内江市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511100000000",
+              "value": "乐山市",
+              "key": "511100000000",
+              "title": "乐山市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511300000000",
+              "value": "南充市",
+              "key": "511300000000",
+              "title": "南充市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511400000000",
+              "value": "眉山市",
+              "key": "511400000000",
+              "title": "眉山市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511500000000",
+              "value": "宜宾市",
+              "key": "511500000000",
+              "title": "宜宾市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511600000000",
+              "value": "广安市",
+              "key": "511600000000",
+              "title": "广安市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511700000000",
+              "value": "达州市",
+              "key": "511700000000",
+              "title": "达州市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511800000000",
+              "value": "雅安市",
+              "key": "511800000000",
+              "title": "雅安市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "511900000000",
+              "value": "巴中市",
+              "key": "511900000000",
+              "title": "巴中市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "512000000000",
+              "value": "资阳市",
+              "key": "512000000000",
+              "title": "资阳市",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "513200000000",
+              "value": "阿坝藏族羌族自治州",
+              "key": "513200000000",
+              "title": "阿坝藏族羌族自治州",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "513300000000",
+              "value": "甘孜藏族自治州",
+              "key": "513300000000",
+              "title": "甘孜藏族自治州",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "513400000000",
+              "value": "凉山彝族自治州",
+              "key": "513400000000",
+              "title": "凉山彝族自治州",
+              "disabled": false,
+              "parentCode": "510000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "520000000000",
+          "value": "贵州省",
+          "key": "520000000000",
+          "title": "贵州省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "520100000000",
+              "value": "贵阳市",
+              "key": "520100000000",
+              "title": "贵阳市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "520200000000",
+              "value": "六盘水市",
+              "key": "520200000000",
+              "title": "六盘水市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "520300000000",
+              "value": "遵义市",
+              "key": "520300000000",
+              "title": "遵义市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "520400000000",
+              "value": "安顺市",
+              "key": "520400000000",
+              "title": "安顺市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "520500000000",
+              "value": "毕节市",
+              "key": "520500000000",
+              "title": "毕节市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "520600000000",
+              "value": "铜仁市",
+              "key": "520600000000",
+              "title": "铜仁市",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "522300000000",
+              "value": "黔西南布依族苗族自治州",
+              "key": "522300000000",
+              "title": "黔西南布依族苗族自治州",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "522600000000",
+              "value": "黔东南苗族侗族自治州",
+              "key": "522600000000",
+              "title": "黔东南苗族侗族自治州",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "522700000000",
+              "value": "黔南布依族苗族自治州",
+              "key": "522700000000",
+              "title": "黔南布依族苗族自治州",
+              "disabled": false,
+              "parentCode": "520000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "530000000000",
+          "value": "云南省",
+          "key": "530000000000",
+          "title": "云南省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "530100000000",
+              "value": "昆明市",
+              "key": "530100000000",
+              "title": "昆明市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530300000000",
+              "value": "曲靖市",
+              "key": "530300000000",
+              "title": "曲靖市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530400000000",
+              "value": "玉溪市",
+              "key": "530400000000",
+              "title": "玉溪市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530500000000",
+              "value": "保山市",
+              "key": "530500000000",
+              "title": "保山市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530600000000",
+              "value": "昭通市",
+              "key": "530600000000",
+              "title": "昭通市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530700000000",
+              "value": "丽江市",
+              "key": "530700000000",
+              "title": "丽江市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530800000000",
+              "value": "普洱市",
+              "key": "530800000000",
+              "title": "普洱市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "530900000000",
+              "value": "临沧市",
+              "key": "530900000000",
+              "title": "临沧市",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "532300000000",
+              "value": "楚雄彝族自治州",
+              "key": "532300000000",
+              "title": "楚雄彝族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "532500000000",
+              "value": "红河哈尼族彝族自治州",
+              "key": "532500000000",
+              "title": "红河哈尼族彝族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "532600000000",
+              "value": "文山壮族苗族自治州",
+              "key": "532600000000",
+              "title": "文山壮族苗族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "532800000000",
+              "value": "西双版纳傣族自治州",
+              "key": "532800000000",
+              "title": "西双版纳傣族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "532900000000",
+              "value": "大理白族自治州",
+              "key": "532900000000",
+              "title": "大理白族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "533100000000",
+              "value": "德宏傣族景颇族自治州",
+              "key": "533100000000",
+              "title": "德宏傣族景颇族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "533300000000",
+              "value": "怒江傈僳族自治州",
+              "key": "533300000000",
+              "title": "怒江傈僳族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "533400000000",
+              "value": "迪庆藏族自治州",
+              "key": "533400000000",
+              "title": "迪庆藏族自治州",
+              "disabled": false,
+              "parentCode": "530000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "540000000000",
+          "value": "西藏自治区",
+          "key": "540000000000",
+          "title": "西藏自治区",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "540100000000",
+              "value": "拉萨市",
+              "key": "540100000000",
+              "title": "拉萨市",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "540200000000",
+              "value": "日喀则市",
+              "key": "540200000000",
+              "title": "日喀则市",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "540300000000",
+              "value": "昌都市",
+              "key": "540300000000",
+              "title": "昌都市",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "540400000000",
+              "value": "林芝市",
+              "key": "540400000000",
+              "title": "林芝市",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "540500000000",
+              "value": "山南市",
+              "key": "540500000000",
+              "title": "山南市",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "542400000000",
+              "value": "那曲地区",
+              "key": "542400000000",
+              "title": "那曲地区",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "542500000000",
+              "value": "阿里地区",
+              "key": "542500000000",
+              "title": "阿里地区",
+              "disabled": false,
+              "parentCode": "540000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "610000000000",
+          "value": "陕西省",
+          "key": "610000000000",
+          "title": "陕西省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "610100000000",
+              "value": "西安市",
+              "key": "610100000000",
+              "title": "西安市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610200000000",
+              "value": "铜川市",
+              "key": "610200000000",
+              "title": "铜川市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610300000000",
+              "value": "宝鸡市",
+              "key": "610300000000",
+              "title": "宝鸡市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610400000000",
+              "value": "咸阳市",
+              "key": "610400000000",
+              "title": "咸阳市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610500000000",
+              "value": "渭南市",
+              "key": "610500000000",
+              "title": "渭南市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610600000000",
+              "value": "延安市",
+              "key": "610600000000",
+              "title": "延安市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610700000000",
+              "value": "汉中市",
+              "key": "610700000000",
+              "title": "汉中市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610800000000",
+              "value": "榆林市",
+              "key": "610800000000",
+              "title": "榆林市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "610900000000",
+              "value": "安康市",
+              "key": "610900000000",
+              "title": "安康市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "611000000000",
+              "value": "商洛市",
+              "key": "611000000000",
+              "title": "商洛市",
+              "disabled": false,
+              "parentCode": "610000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "620000000000",
+          "value": "甘肃省",
+          "key": "620000000000",
+          "title": "甘肃省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "620100000000",
+              "value": "兰州市",
+              "key": "620100000000",
+              "title": "兰州市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620200000000",
+              "value": "嘉峪关市",
+              "key": "620200000000",
+              "title": "嘉峪关市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620300000000",
+              "value": "金昌市",
+              "key": "620300000000",
+              "title": "金昌市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620400000000",
+              "value": "白银市",
+              "key": "620400000000",
+              "title": "白银市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620500000000",
+              "value": "天水市",
+              "key": "620500000000",
+              "title": "天水市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620600000000",
+              "value": "武威市",
+              "key": "620600000000",
+              "title": "武威市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620700000000",
+              "value": "张掖市",
+              "key": "620700000000",
+              "title": "张掖市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620800000000",
+              "value": "平凉市",
+              "key": "620800000000",
+              "title": "平凉市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "620900000000",
+              "value": "酒泉市",
+              "key": "620900000000",
+              "title": "酒泉市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "621000000000",
+              "value": "庆阳市",
+              "key": "621000000000",
+              "title": "庆阳市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "621100000000",
+              "value": "定西市",
+              "key": "621100000000",
+              "title": "定西市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "621200000000",
+              "value": "陇南市",
+              "key": "621200000000",
+              "title": "陇南市",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "622900000000",
+              "value": "临夏回族自治州",
+              "key": "622900000000",
+              "title": "临夏回族自治州",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "623000000000",
+              "value": "甘南藏族自治州",
+              "key": "623000000000",
+              "title": "甘南藏族自治州",
+              "disabled": false,
+              "parentCode": "620000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "630000000000",
+          "value": "青海省",
+          "key": "630000000000",
+          "title": "青海省",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "630100000000",
+              "value": "西宁市",
+              "key": "630100000000",
+              "title": "西宁市",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "630200000000",
+              "value": "海东市",
+              "key": "630200000000",
+              "title": "海东市",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632200000000",
+              "value": "海北藏族自治州",
+              "key": "632200000000",
+              "title": "海北藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632300000000",
+              "value": "黄南藏族自治州",
+              "key": "632300000000",
+              "title": "黄南藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632500000000",
+              "value": "海南藏族自治州",
+              "key": "632500000000",
+              "title": "海南藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632600000000",
+              "value": "果洛藏族自治州",
+              "key": "632600000000",
+              "title": "果洛藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632700000000",
+              "value": "玉树藏族自治州",
+              "key": "632700000000",
+              "title": "玉树藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "632800000000",
+              "value": "海西蒙古族藏族自治州",
+              "key": "632800000000",
+              "title": "海西蒙古族藏族自治州",
+              "disabled": false,
+              "parentCode": "630000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "640000000000",
+          "value": "宁夏回族自治区",
+          "key": "640000000000",
+          "title": "宁夏回族自治区",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "640100000000",
+              "value": "银川市",
+              "key": "640100000000",
+              "title": "银川市",
+              "disabled": false,
+              "parentCode": "640000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "640200000000",
+              "value": "石嘴山市",
+              "key": "640200000000",
+              "title": "石嘴山市",
+              "disabled": false,
+              "parentCode": "640000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "640300000000",
+              "value": "吴忠市",
+              "key": "640300000000",
+              "title": "吴忠市",
+              "disabled": false,
+              "parentCode": "640000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "640400000000",
+              "value": "固原市",
+              "key": "640400000000",
+              "title": "固原市",
+              "disabled": false,
+              "parentCode": "640000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "640500000000",
+              "value": "中卫市",
+              "key": "640500000000",
+              "title": "中卫市",
+              "disabled": false,
+              "parentCode": "640000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "code": "650000000000",
+          "value": "新疆维吾尔自治区",
+          "key": "650000000000",
+          "title": "新疆维吾尔自治区",
+          "disabled": false,
+          "parentCode": "",
+          "levelId": 1,
+          "children": [
+            {
+              "code": "650100000000",
+              "value": "乌鲁木齐市",
+              "key": "650100000000",
+              "title": "乌鲁木齐市",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "650200000000",
+              "value": "克拉玛依市",
+              "key": "650200000000",
+              "title": "克拉玛依市",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "650400000000",
+              "value": "吐鲁番市",
+              "key": "650400000000",
+              "title": "吐鲁番市",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "650500000000",
+              "value": "哈密市",
+              "key": "650500000000",
+              "title": "哈密市",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "652300000000",
+              "value": "昌吉回族自治州",
+              "key": "652300000000",
+              "title": "昌吉回族自治州",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "652700000000",
+              "value": "博尔塔拉蒙古自治州",
+              "key": "652700000000",
+              "title": "博尔塔拉蒙古自治州",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "652800000000",
+              "value": "巴音郭楞蒙古自治州",
+              "key": "652800000000",
+              "title": "巴音郭楞蒙古自治州",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "652900000000",
+              "value": "阿克苏地区",
+              "key": "652900000000",
+              "title": "阿克苏地区",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "653000000000",
+              "value": "克孜勒苏柯尔克孜自治州",
+              "key": "653000000000",
+              "title": "克孜勒苏柯尔克孜自治州",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "653100000000",
+              "value": "喀什地区",
+              "key": "653100000000",
+              "title": "喀什地区",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "653200000000",
+              "value": "和田地区",
+              "key": "653200000000",
+              "title": "和田地区",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "654000000000",
+              "value": "伊犁哈萨克自治州",
+              "key": "654000000000",
+              "title": "伊犁哈萨克自治州",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "654200000000",
+              "value": "塔城地区",
+              "key": "654200000000",
+              "title": "塔城地区",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "654300000000",
+              "value": "阿勒泰地区",
+              "key": "654300000000",
+              "title": "阿勒泰地区",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            },
+            {
+              "code": "659000000000",
+              "value": "自治区直辖县级行政区划",
+              "key": "659000000000",
+              "title": "自治区直辖县级行政区划",
+              "disabled": false,
+              "parentCode": "650000000000",
+              "levelId": 2,
+              "children": []
+            }
+          ]
+        }
+     
+  ]
+}

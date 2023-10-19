@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+#. "$(dirname -- "$0")/_/husky.sh"
+
+# lint-staged
+# npm run lint
+# echo hello world
+#npm run format
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint-staged

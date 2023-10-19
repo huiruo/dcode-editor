@@ -1,0 +1,468 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "积分商品配置",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "grid",
+                      "controlItemParam": {
+                          "label": "列表样式",
+                          "id": "rowType",
+                          "type": "grid",
+                          "defaultValue": "vertical",
+                          "inline": true,
+                          "buttonStyle": "icon",
+                          "data": [
+                              {
+                                  "label": "一行一个",
+                                  "value": "horizontal",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/22.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/21.png"
+                              },
+                              {
+                                  "label": "一行两个",
+                                  "value": "vertical",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1_1.png"
+                              },
+                              {
+                                  "label": "横滑列表",
+                                  "value": "verticalSlide",
+                                  "src": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/5.png",
+                                  "srcSelected": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/5_5.png"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "linePrice"
+                          ],
+                          "data": [
+                              {
+                                  "label": "商品划线价",
+                                  "value": "linePrice"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "是否需要页签",
+                          "id": "isShowTab",
+                          "type": "group",
+                          "defaultValue": false,
+                          "inline": true,
+                          "buttonStyle": "outline",
+                          "data": [
+                              {
+                                  "label": "是",
+                                  "value": true
+                              },
+                              {
+                                  "label": "否",
+                                  "value": false
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Proliferation",
+                      "templateId": "tabList",
+                      "parentLabel": "添加标签",
+                      "label": "添加标签",
+                      "popup": false,
+                      "id": "tabList",
+                      "popupParam": {
+                          "popupType": "modal",
+                          "width": 800
+                      },
+                      "mapValue": {
+                         "isShowTab": true
+                      },
+                      "mutex": {
+                          "ids": [
+                              "isShowTab"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "form",
+                      "templateId": "noTab",
+                      "parentLabel": "",
+                      "label": "选择商品",
+                      "styleType": "link",
+                      "id": "noTab",
+                      "inputParams": {
+                          "type": "dashed",
+                          "icon": "plus",
+                          "size": "large"
+                      },
+                      "popupParam": {
+                          "popupType": "modal",
+                          "width": 800
+                      },
+                      "mapValue": {
+                         "isShowTab": false
+                      },
+                      "mutex": {
+                          "ids": [
+                              "isShowTab"
+                          ]
+                      },
+                      "formItems": [
+                        {
+                            "type": "Radio",
+                            "controlItemParam": {
+                                "label": "添加商品",
+                                "id": "way",
+                                "type": "group",
+                                "defaultValue": "custom",
+                                "inline": true,
+                                "buttonStyle": "outline",
+                                "data": [
+                                    {
+                                        "label": "指定商品",
+                                        "value": "custom"
+                                    },
+                                    {
+                                        "label": "指定类目",
+                                        "value": "category"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "TreeSelect",
+                            "mapValue": {
+                                "way": "category"
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "way"
+                                ]
+                            },
+                            "controlItemParam": {
+                                "id": "categoryId",
+                                "label": "积分类目",
+                                "defaultValue": "",
+                                "requestParam": {
+                                    "url": "xx",
+                                    "method": "GET"
+                                }
+                            }
+                        },
+                        {
+                            "type": "Number",
+                            "mapValue": {
+                                "way": "category"
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "way"
+                                ]
+                            },
+                            "controlItemParam": {
+                                "label": "显示个数",
+                                "id": "number",
+                                "max": 9999,
+                                "defaultValue": 1,
+                                "min": 1
+                            }
+                        },
+                        {
+                            "type": "Remote",
+                            "label": "选择商品",
+                            "text": "选择商品",
+                            "id": "list",
+                            "popupParam": {
+                                "popupType": "modal",
+                                "width": 800
+                            },
+                            "inline": true,
+                            "inputParams": {
+                                "type": "dashed",
+                                "icon": "plus",
+                                "size": "large"
+                            },
+                            "listPage": {
+                                "requestParam": {
+                                        "options":{
+                                            "itemType": 2,
+                                            "busType": 0
+                                        },
+                                        "url":"/api/icommerce-mgmt//v1/item/list"
+                                },
+                                "panelParam": {
+                                    "items": [
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "itemName",
+                                                "label": "商品名称",
+                                                "defaultValue": "",
+                                                "placeholder": "请输入商品名称",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "TreeSelect",
+                                            "controlItemParam": {
+                                                "id": "frontDirId",
+                                                "label": "积分类目",
+                                                "defaultValue": "",
+                                                "requestParam": {
+                                                    "url": "xx",
+                                                    "method": "GET"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "tableParam": {
+                                    "rowSelection": {
+                                        "type": "checkbox"
+                                    },
+                                    "columns": [
+                                        {
+                                            "dataIndex": "itemCode",
+                                            "title": "商品编码"
+                                        },
+                                        {
+                                            "dataIndex": "itemName",
+                                            "title": "商品名称"
+                                        },
+                                        {
+                                            "dataIndex": "sellPrice",
+                                            "title": "售价"
+                                        },
+                                        {
+                                            "dataIndex": "itemTotalStorage",
+                                            "title": "库存"
+                                        }
+                                    ]
+                                }
+                            },
+                            "template": {
+                                "id": "id",
+                                "name": "itemName",
+                                "itemId": "itemId",
+                                "jumpUrl": "jumpUrl",
+                                "src": "imgPath",
+                                "children": "imgPath"
+                            },
+                            "textParam": {
+                                "controlType": "Img"
+                            },
+                            "mapValue": {
+                                "way": "custom"
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "way"
+                                ]
+                            }
+                        }
+                      ]
+                  }
+              ]
+          },
+          {
+              "templateId": "tabList",
+              "dataId":"tabList",
+              "label":"添加标签",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "标签名称",
+                          "id": "title"
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "添加商品",
+                          "id": "way",
+                          "type": "group",
+                          "defaultValue": "custom",
+                          "inline": true,
+                          "buttonStyle": "outline",
+                          "data": [
+                              {
+                                  "label": "指定商品",
+                                  "value": "custom"
+                              },
+                              {
+                                  "label": "指定类目",
+                                  "value": "category"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "TreeSelect",
+                      "mapValue": {
+                         "way": "category"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "way"
+                          ]
+                      },
+                      "controlItemParam": {
+                          "id": "categoryId",
+                          "label": "积分类目",
+                          "defaultValue": "",
+                          "requestParam": {
+                              "url": "xx",
+                              "method": "GET"
+                          }
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "mapValue": {
+                         "way": "category"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "way"
+                          ]
+                      },
+                      "controlItemParam": {
+                          "label": "显示个数",
+                          "id": "number",
+                          "max": 9999,
+                          "defaultValue": 1,
+                          "min": 1
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "label": "选择商品-2",
+                      "text": "选择商品",
+                      "id": "list",
+                      "popupParam": {
+                          "popupType": "modal",
+                          "width": 800
+                      },
+                      "inline": true,
+                      "inputParams": {
+                          "type": "dashed",
+                          "icon": "plus",
+                          "size": "large"
+                      },
+                      "listPage": {
+                          "requestParam": {
+                                "options":{
+                                    "status": 1,
+                                    "busType": 0,
+                                    "itemType": 2
+                                },
+                                "url":"/api/icommerce-mgmt//v1/item/list"
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "itemName",
+                                          "label": "商品名称",
+                                          "defaultValue": "",
+                                          "placeholder": "请输入商品名称",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "TreeSelect",
+                                      "controlItemParam": {
+                                          "id": "frontDirId",
+                                          "label": "积分类目",
+                                          "defaultValue": "",
+                                          "requestParam": {
+                                              "url": "xx",
+                                              "method": "GET"
+                                          }
+                                      }
+                                  }
+                              ]
+                          },
+                          "tableParam": {
+                              "rowSelection": {
+                                  "type": "checkbox"
+                              },
+                              "columns": [
+                                  {
+                                      "dataIndex": "itemCode",
+                                      "title": "商品编码"
+                                  },
+                                  {
+                                      "dataIndex": "itemName",
+                                      "title": "商品名称"
+                                  },
+                                  {
+                                      "dataIndex": "sellPrice",
+                                      "title": "售价"
+                                  },
+                                  {
+                                      "dataIndex": "itemTotalStorage",
+                                      "title": "库存"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "id": "id",
+                          "name": "itemName",
+                          "itemId": "itemId",
+                          "jumpUrl": "jumpUrl",
+                          "src": "imgPath",
+                          "children": "imgPath"
+                      },
+                      "textParam": {
+                          "controlType": "Img"
+                      },
+                      "mapValue": {
+                         "way": "custom"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "way"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

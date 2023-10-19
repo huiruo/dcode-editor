@@ -1,0 +1,283 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "页签",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "页面置顶",
+                          "id": "isSticky",
+                          "defaultValue": false,
+                          "styleParam": {
+                              "width": "md"
+                          }
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "页签背景",
+                          "id": "bgType",
+                          "defaultValue": 1,
+                          "inline": true,
+                          "data": [
+                              {
+                                  "value": 1,
+                                  "label": "颜色填充"
+                              },
+                              {
+                                  "value": 2,
+                                  "label": "图片填充"
+                              }
+                          ],
+                          "styleParam": {
+                              "width": "md"
+                          }
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "label": "颜色填充",
+                          "id": "colorBg",
+                          "defaultValue": "#ffffff",
+                          "inline": true,
+                          "styleParam": {
+                              "width": "md"
+                          }
+                      },
+                      "mapValue": {
+                         "bgType": 1
+                      },
+                      "mutex": {
+                          "ids": [
+                              "bgType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Upload",
+                      "controlItemParam": {
+                          "id": "imgBg",
+                          "label": "图片填充",
+                          "type": "img",
+                          "url": "xx",
+                          "submitType": "array",
+                          "styleParam": {
+                              "size": "middle"
+                          },
+                          "limit": 1
+                      },
+                      "mapValue": {
+                         "bgType": 2
+                      },
+                      "mutex": {
+                          "ids": [
+                              "bgType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "label": "文字(未选中)",
+                          "id": "unActiveColor",
+                          "defaultValue": "#333333",
+                          "inline": true,
+                          "styleParam": {
+                              "width": "md"
+                          }
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "label": "文字(已选中)",
+                          "id": "activeColor",
+                          "defaultValue": "#ff0000",
+                          "inline": true,
+                          "styleParam": {
+                              "width": "md"
+                          }
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Proliferation",
+                      "templateId": "tabList",
+                      "parentLabel": "添加页签",
+                      "id": "tabList",
+                      "popup": false,
+                      "label": "页签",
+                      "maxCount": 20
+                  }
+              ]
+          },
+          {
+              "templateId": "tabList",
+              "dataId": "tabList",
+              "label": "页签",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "id": "title",
+                          "label": "页签名称",
+                          "rules": {
+                              "max": 8
+                          }
+                      }
+                  },
+                  {
+                      "type": "Select",
+                      "controlItemParam": {
+                          "id": "linkType",
+                          "label": "链接类型",
+                          "defaultValue": "miniPage",
+                          "data": [
+                              {
+                                  "label": "微页面",
+                                  "value": "miniPage"
+                              },
+                              {
+                                  "label": "自定义模块",
+                                  "value": "custormModule"
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "label": "跳转页面",
+                      "text": "选择微页面",
+                      "activeType": "data",
+                      "id": "miniPage",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {},
+                      "listPage": {
+                          "requestParam": {
+                              "options":{
+                                  "type": "shopActivity"
+                              },
+                              "url":"/api/icommerce-mgmt//v1/page/edit/list"
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "标题",
+                                      "dataIndex": "name"
+                                  },
+                                  {
+                                      "title": "创建时间",
+                                      "dataIndex": "createTime"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "name",
+                          "code": "code",
+                          "id": "id",
+                          "newUrl": "newUrl",
+                          "children": "title",
+                          "text": "name"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                         "linkType": "miniPage"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "linkType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Remote",
+                      "label": "展示内容",
+                      "text": "选择自定义模块",
+                      "activeType": "data",
+                      "id": "custormModule",
+                      "id_test": "miniPage",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {},
+                      "listPage": {
+                          "requestParam": {
+                            "options":{
+                                "type": "shopCustomModule"
+                            },
+                            "url":"/api/icommerce-mgmt//v1/page/edit/list"
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "标题",
+                                      "dataIndex": "name"
+                                  },
+                                  {
+                                      "title": "创建时间",
+                                      "dataIndex": "createTime"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "name",
+                          "code": "code",
+                          "id": "id",
+                          "newUrl": "newUrl",
+                          "children": "title",
+                          "text": "name"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                         "linkType": "custormModule"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "linkType"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

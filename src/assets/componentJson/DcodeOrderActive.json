@@ -1,0 +1,1149 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "订单活动",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "group": [
+                  {
+                      "includes": [
+                          "ActivityTitle2",
+                          "number2",
+                          "rule2",
+                          "fullPresentActivity2",
+                          "fullReductionActivity2",
+                          "exchangeActivity2"
+                      ]
+                  }
+              ],
+              "formItems": [
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "活动类型",
+                          "id": "radioActiveType",
+                          "defaultValue": "FULL_PRESENT_ACTIVITY",
+                          "data": [
+                              {
+                                  "label": "满赠满返",
+                                  "value": "FULL_PRESENT_ACTIVITY"
+                              },
+                              {
+                                  "label": "满减满折",
+                                  "value": "FULL_REDUCTION_ACTIVITY"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "grid",
+                      "controlItemParam": {
+                          "label": "列表样式",
+                          "id": "rowType",
+                          "type": "grid",
+                          "defaultValue": "vertical",
+                          "inline": true,
+                          "buttonStyle": "icon",
+                          "data": [
+                              {
+                                  "label": "一行一个",
+                                  "value": "horizontalBig",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/2.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/2_2.png"
+                              },
+                              {
+                                  "label": "一行一个",
+                                  "value": "horizontal",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/22.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/21.png"
+                              },
+                              {
+                                  "label": "一行两个",
+                                  "value": "vertical",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/1_1.png"
+                              },
+                              {
+                                  "label": "横滑列表",
+                                  "value": "verticalSlide",
+                                  "src": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/horizontal_sliding.svg",
+                                  "srcSelected": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/horizontal_sliding_action.svg"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "分享开关",
+                          "id": "isShare",
+                          "defaultValue": false
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "itemName",
+                              "linePrice",
+                              "activityTag",
+                              "activityPrice",
+                              "activityTitle"
+                          ],
+                          "data": [
+                              {
+                                  "label": "商品名称",
+                                  "value": "itemName"
+                              },
+                              {
+                                  "label": "商品划线价",
+                                  "value": "linePrice"
+                              },
+                              {
+                                  "label": "商品价格",
+                                  "value": "activityPrice"
+                              },
+                              {
+                                  "label": "活动标题",
+                                  "value": "activityTitle"
+                              },
+                              {
+                                  "label": "活动标签",
+                                  "value": "activityTag"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Select",
+                      "controlItemParam": {
+                          "label": "购买按钮",
+                          "id": "buttonType",
+                          "defaultValue": 0,
+                          "data": [
+                              {
+                                  "label": "无",
+                                  "value": 0
+                              },
+                              {
+                                  "label": "加入购物车",
+                                  "value": 1
+                              },
+                              {
+                                  "label": "立即抢购",
+                                  "value": 2
+                              }
+                          ]
+                      },
+                      "mapValue": {
+                          "rowType":"verticalSlide"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "rowType"
+                          ],
+                          "rules": false
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "活动获取",
+                          "id": "RadioGet",
+                          "inline": true,
+                          "defaultValue": 1,
+                          "data": [
+                              {
+                                  "label": "手动获取",
+                                  "value": 1
+                              },
+                              {
+                                  "label": "自动获取",
+                                  "value": 2
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "活动预告",
+                          "id": "RadioNotice",
+                          "defaultValue": false,
+                          "data": [
+                              {
+                                  "label": "开启",
+                                  "value": true
+                              },
+                              {
+                                  "label": "关闭",
+                                  "value": false
+                              }
+                          ]
+                      },
+                      "mapValue": {
+                          "rowType":"verticalSlide"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "rowType"
+                          ],
+                          "rules": false
+                      }
+                  },
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "活动标题",
+                          "id": "ActivityTitle1",
+                          "inline": true,
+                          "placeholder": "今日活动",
+                          "rules": {
+                              "max": 20
+                          }
+                      }
+                  },
+                  {
+                      "type": "Select",
+                      "controlItemParam": {
+                          "label": "获取规则",
+                          "id": "rule1",
+                          "data": [
+                              {
+                                  "label": "今日活动",
+                                  "value": "TODAY_ACTIVITY"
+                              }
+                          ]
+                      },
+                      "mapValue": {
+                          "RadioGet": 2
+                      },
+                      "mutex": {
+                          "ids": [
+                              "RadioGet"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "商品限制",
+                          "id": "number1",
+                          "inline": true,
+                          "max": 9999,
+                          "min": 0
+                      }
+                  },
+                  {
+                      "type": "Remote",
+                      "label": "选择活动-满赠",
+                      "text": "添加",
+                      "id": "fullPresentActivity",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {
+                          "width": 900
+                      },
+                      "listPage": {
+                          "requestParam": {
+                              "url": "/api/promotion/v1/marketing/activity/list",
+                              "options":{
+                                  "activityType": "FULL_PRESENT_ACTIVITY",
+                                  "activityStatus": "READY"
+                              }
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "活动名称",
+                                      "dataIndex": "activityName"
+                                  },
+                                  {
+                                      "title": "活动编号",
+                                      "dataIndex": "activityCode"
+                                  },
+                                  {
+                                      "title": "预热开始",
+                                      "dataIndex": "preheatStartTime"
+                                  },
+                                  {
+                                      "title": "活动开始",
+                                      "dataIndex": "beginTime"
+                                  },
+                                  {
+                                      "title": "活动结束",
+                                      "dataIndex": "endTime"
+                                  }
+                              ]
+                          },
+                          "tabsParam": {
+                              "tabPanes": [
+                                  {
+                                      "tab": "未开始",
+                                      "key": "READY"
+                                  },
+                                  {
+                                      "tab": "进行中",
+                                      "key": "ACTIVATE"
+                                  }
+                              ]
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityName",
+                                          "label": "活动名称",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityCode",
+                                          "label": "活动编号",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "activityName",
+                          "text": "activityName",
+                          "preheatStartTime": "preheatStartTime",
+                          "beginTime": "beginTime",
+                          "dataIndex": "endTime",
+                          "id": "id",
+                          "endTime": "endTime"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": false,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                          "RadioGet": 1,
+                          "radioActiveType": "FULL_PRESENT_ACTIVITY"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "RadioGet",
+                              "radioActiveType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Remote",
+                      "label": "选择活动-满减",
+                      "text": "添加",
+                      "id": "fullReductionActivity",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {
+                          "width": 900
+                      },
+                      "listPage": {
+                          "requestParam": {
+                              "url": "/api/promotion/v1/marketing/activity/list",
+                              "options":{
+                                  "activityType": "FULL_REDUCTION_ACTIVITY",
+                                  "status": 3,
+                                  "type": "platformActivity",
+                                  "activityStatus": "READY"
+                              }
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "活动名称",
+                                      "dataIndex": "activityName"
+                                  },
+                                  {
+                                      "title": "活动编号",
+                                      "dataIndex": "activityCode"
+                                  },
+                                  {
+                                      "title": "预热开始",
+                                      "dataIndex": "preheatStartTime"
+                                  },
+                                  {
+                                      "title": "活动开始",
+                                      "dataIndex": "beginTime"
+                                  },
+                                  {
+                                      "title": "活动结束",
+                                      "dataIndex": "endTime"
+                                  }
+                              ]
+                          },
+                          "tabsParam": {
+                              "tabPanes": [
+                                  {
+                                      "tab": "未开始",
+                                      "key": "READY"
+                                  },
+                                  {
+                                      "tab": "进行中",
+                                      "key": "ACTIVATE"
+                                  }
+                              ]
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityName",
+                                          "label": "活动名称",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityCode",
+                                          "label": "活动编号",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "activityName",
+                          "text": "activityName",
+                          "preheatStartTime": "preheatStartTime",
+                          "beginTime": "beginTime",
+                          "dataIndex": "endTime",
+                          "id": "id",
+                          "endTime": "endTime"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": false,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                            "RadioGet": 1,
+                           "radioActiveType": "FULL_REDUCTION_ACTIVITY"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "RadioGet",
+                              "radioActiveType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Remote",
+                      "label": "选择活动-3",
+                      "text": "添加",
+                      "id": "exchangeActivity",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {
+                          "width": 900
+                      },
+                      "listPage": {
+                          "requestParam": {
+                              "url": "/api/promotion/v1/marketing/activity/list",
+                              "options":{
+                                  "activityType": "EXCHANGE_ACTIVITY",
+                                  "status": 3,
+                                  "type": "platformActivity",
+                                  "activityStatus": "READY"
+                              }
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "活动名称",
+                                      "dataIndex": "activityName"
+                                  },
+                                  {
+                                      "title": "活动编号",
+                                      "dataIndex": "activityCode"
+                                  },
+                                  {
+                                      "title": "预热开始",
+                                      "dataIndex": "preheatStartTime"
+                                  },
+                                  {
+                                      "title": "活动开始",
+                                      "dataIndex": "beginTime"
+                                  },
+                                  {
+                                      "title": "活动结束",
+                                      "dataIndex": "endTime"
+                                  }
+                              ]
+                          },
+                          "tabsParam": {
+                              "tabPanes": [
+                                  {
+                                      "tab": "未开始",
+                                      "key": "READY"
+                                  },
+                                  {
+                                      "tab": "进行中",
+                                      "key": "ACTIVATE"
+                                  }
+                              ]
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityName",
+                                          "label": "活动名称",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "activityCode",
+                                          "label": "活动编号",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "activityName",
+                          "text": "activityName",
+                          "preheatStartTime": "preheatStartTime",
+                          "beginTime": "beginTime",
+                          "dataIndex": "endTime",
+                          "id": "id",
+                          "endTime": "endTime"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": false,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                            "RadioGet": 1,
+                            "radioActiveType": "EXCHANGE_ACTIVITY"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "RadioGet",
+                              "radioActiveType"
+                          ]
+                      }
+                  },
+                  {
+                    "templateId": "ActivityNotice",
+                    "type": "ActivityNotice",
+                    "noSymbol": true,
+                    "label": "活动预告",
+                    "mapValue": {
+                        "rowType": "verticalSlide",
+                        "RadioNotice": false
+                    },
+                    "mutex": {
+                        "ids": [
+                            "rowType",
+                            "RadioNotice"
+                        ],
+                        "rules": false
+                    },
+                    "formItems": [
+                        {
+                            "type": "String",
+                            "controlItemParam": {
+                                "label": "预告标题",
+                                "id": "ActivityTitle2",
+                                "placeholder": "明日预告",
+                                "rules": {
+                                    "max": 10
+                                }
+                            },
+                            "mapValue": {
+                                "rowType": "verticalSlide",
+                                "RadioNotice": false
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "rowType",
+                                    "RadioNotice"
+                                ],
+                                "rules": false
+                            }
+                        },
+                        {
+                            "type": "Select",
+                            "controlItemParam": {
+                                "label": "获取规则",
+                                "id": "rule2",
+                                "inline": true,
+                                "data": [
+                                    {
+                                        "label": "明日活动",
+                                        "value": "TOMORROW_ACTIVITY"
+                                    },
+                                    {
+                                        "label": "近七天活动",
+                                        "value": "LAST_SEVEN_DAY_ACTIVITY"
+                                    }
+                                ]
+                            },
+                            "mapValue": {
+                                "rowType": "verticalSlide",
+                                "RadioNotice": false,
+                                "RadioGet": 1 
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "RadioNotice",
+                                    "rowType",
+                                    "RadioGet"
+                                ],
+                                "rules": false
+                            }
+                        },
+                        {
+                            "type": "Number",
+                            "controlItemParam": {
+                                "label": "商品限制",
+                                "id": "number2",
+                                "max": 9999,
+                                "min": 0
+                            },
+                            "mapValue": {
+                                "rowType": "verticalSlide",
+                                "RadioNotice": false
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "RadioNotice",
+                                    "rowType"
+                                ],
+                                "rules": false
+                            }
+                        },
+                        {
+                            "type": "Remote",
+                            "label": "预告活动-满赠",
+                            "text": "添加预告",
+                            "id": "fullPresentActivity2",
+                            "styleType": "link",
+                            "inline": true,
+                            "popupParam": {
+                                "width": 900
+                            },
+                            "listPage": {
+                                "requestParam": {
+                                    "url": "/api/promotion/v1/marketing/activity/list",
+                                    "options":{
+                                        "activityType": "FULL_PRESENT_ACTIVITY",
+                                        "status": 3,
+                                        "type": "platformActivity",
+                                        "activityStatus": "READY"
+                                    }
+                                },
+                                "tableParam": {
+                                    "rowKey": "id",
+                                    "rowSelection": {
+                                        "type": "radio"
+                                    },
+                                    "columns": [
+                                        {
+                                            "title": "活动名称",
+                                            "dataIndex": "activityName"
+                                        },
+                                        {
+                                            "title": "活动编号",
+                                            "dataIndex": "activityCode"
+                                        },
+                                        {
+                                            "title": "预热开始",
+                                            "dataIndex": "preheatStartTime"
+                                        },
+                                        {
+                                            "title": "活动开始",
+                                            "dataIndex": "beginTime"
+                                        },
+                                        {
+                                            "title": "活动结束",
+                                            "dataIndex": "endTime"
+                                        }
+                                    ]
+                                },
+                                "tabsParam": {
+                                    "tabPanes": [
+                                        {
+                                            "tab": "未开始",
+                                            "key": "READY"
+                                        },
+                                        {
+                                            "tab": "进行中",
+                                            "key": "ACTIVATE"
+                                        }
+                                    ]
+                                },
+                                "panelParam": {
+                                    "items": [
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityName",
+                                                "label": "活动名称",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityCode",
+                                                "label": "活动编号",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "template": {
+                                "value": "activityName",
+                                "text": "activityName",
+                                "preheatStartTime": "preheatStartTime",
+                                "beginTime": "beginTime",
+                                "dataIndex": "endTime",
+                                "id": "id",
+                                "endTime": "endTime"
+                            },
+                            "textParam": {
+                                "controlType": "Tag",
+                                "closable": false,
+                                "styleParam": {
+                                    "size": "large"
+                                }
+                            },
+                            "mapValue": {
+                                "rowType": "verticalSlide",
+                                "RadioNotice": false,
+                                "RadioGet": 2,
+                                "radioActiveType": "FULL_REDUCTION_ACTIVITY"
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "RadioNotice",
+                                    "rowType",
+                                    "RadioGet",
+                                    "radioActiveType"
+                                ],
+                                "rules": false
+                            }
+                        },
+                        {
+                            "type": "Remote",
+                            "label": "预告活动-满减",
+                            "text": "添加预告",
+                            "id": "fullReductionActivity2",
+                            "styleType": "link",
+                            "inline": true,
+                            "popupParam": {
+                                "width": 900
+                            },
+                            "listPage": {
+                                "requestParam": {
+                                    "url": "/api/promotion/v1/marketing/activity/list",
+                                    "options":{
+                                        "activityType": "FULL_REDUCTION_ACTIVITY",
+                                        "status": 3,
+                                        "type": "platformActivity",
+                                        "activityStatus": "READY"
+                                    }
+                                },
+                                "tableParam": {
+                                    "rowKey": "id",
+                                    "rowSelection": {
+                                        "type": "radio"
+                                    },
+                                    "columns": [
+                                        {
+                                            "title": "活动名称",
+                                            "dataIndex": "activityName"
+                                        },
+                                        {
+                                            "title": "活动编号",
+                                            "dataIndex": "activityCode"
+                                        },
+                                        {
+                                            "title": "预热开始",
+                                            "dataIndex": "preheatStartTime"
+                                        },
+                                        {
+                                            "title": "活动开始",
+                                            "dataIndex": "beginTime"
+                                        },
+                                        {
+                                            "title": "活动结束",
+                                            "dataIndex": "endTime"
+                                        }
+                                    ]
+                                },
+                                "tabsParam": {
+                                    "tabPanes": [
+                                        {
+                                            "tab": "未开始",
+                                            "key": "READY"
+                                        },
+                                        {
+                                            "tab": "进行中",
+                                            "key": "ACTIVATE"
+                                        }
+                                    ]
+                                },
+                                "panelParam": {
+                                    "items": [
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityName",
+                                                "label": "活动名称",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityCode",
+                                                "label": "活动编号",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "template": {
+                                "value": "activityName",
+                                "text": "activityName",
+                                "preheatStartTime": "preheatStartTime",
+                                "beginTime": "beginTime",
+                                "dataIndex": "endTime",
+                                "id": "id",
+                                "endTime": "endTime"
+                            },
+                            "textParam": {
+                                "controlType": "Tag",
+                                "closable": false,
+                                "styleParam": {
+                                    "size": "large"
+                                }
+                            },
+                            "mapValue": {
+                                "rowType": "verticalSlide",
+                                "RadioNotice": false,
+                                "RadioGet": 2,
+                                "radioActiveType": "FULL_PRESENT_ACTIVITY"
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "RadioNotice",
+                                    "rowType",
+                                    "RadioGet",
+                                    "radioActiveType"
+                                ],
+                                "rules": false
+                            }
+                        },
+                        {
+                            "type": "Remote",
+                            "textLabel": "预告活动-3",
+                            "text": "添加预告",
+                            "id": "exchangeActivity2",
+                            "styleType": "link",
+                            "inline": true,
+                            "popupParam": {
+                                "width": 900
+                            },
+                            "listPage": {
+                                "requestParam": {
+                                    "url": "xx",
+                                    "method": "GET",
+                                    "filterEmpty": true,
+                                    "headers": {},
+                                    "data": {
+                                        "status": 3,
+                                        "type": "platformActivity"
+                                    }
+                                },
+                                "tableParam": {
+                                    "rowKey": "id",
+                                    "rowSelection": {
+                                        "type": "radio"
+                                    },
+                                    "columns": [
+                                        {
+                                            "title": "活动名称",
+                                            "dataIndex": "activityName"
+                                        },
+                                        {
+                                            "title": "活动编号",
+                                            "dataIndex": "activityCode"
+                                        },
+                                        {
+                                            "title": "预热开始",
+                                            "dataIndex": "preheatStartTime"
+                                        },
+                                        {
+                                            "title": "活动开始",
+                                            "dataIndex": "beginTime"
+                                        },
+                                        {
+                                            "title": "活动结束",
+                                            "dataIndex": "endTime"
+                                        }
+                                    ]
+                                },
+                                "tabsParam": {
+                                    "tabPanes": [
+                                        {
+                                            "tab": "未开始",
+                                            "key": "READY"
+                                        },
+                                        {
+                                            "tab": "进行中",
+                                            "key": "ACTIVATE"
+                                        }
+                                    ]
+                                },
+                                "panelParam": {
+                                    "items": [
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityName",
+                                                "label": "活动名称",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "String",
+                                            "controlItemParam": {
+                                                "id": "activityCode",
+                                                "label": "活动编号",
+                                                "defaultValue": "",
+                                                "rules":{
+                                                    "max": 50
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "template": {
+                                "value": "activityName",
+                                "text": "activityName",
+                                "preheatStartTime": "preheatStartTime",
+                                "beginTime": "beginTime",
+                                "dataIndex": "endTime",
+                                "id": "id",
+                                "endTime": "endTime"
+                            },
+                            "textParam": {
+                                "controlType": "Tag",
+                                "closable": false,
+                                "styleParam": {
+                                    "size": "large"
+                                }
+                            },
+                            "mapValue": {
+                                "RadioNotice": "",
+                                "RadioGet": "",
+                                "rowType": "",
+                                "radioActiveType": ""
+                            },
+                            "mutex": {
+                                "ids": [
+                                    "RadioNotice",
+                                    "RadioGet",
+                                    "rowType",
+                                    "radioActiveType"
+                                ]
+                            }
+                        }
+                    ]
+                  },
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "是否显示更多",
+                          "id": "showExtra",
+                          "defaultValue": false
+                      },
+                      "mapValue": {
+                          "rowType":"verticalSlide"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "rowType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Select",
+                      "controlItemParam": {
+                          "id": "extraLinkType",
+                          "label": "更多跳转",
+                          "inline": true,
+                          "defaultValue": "miniPage",
+                          "data": [
+                              {
+                                  "label": "微页面",
+                                  "value": "miniPage"
+                              }
+                          ]
+                      },
+                      "mapValue": {
+                          "rowType": "verticalSlide",
+                          "showExtra": true
+                      },
+                      "mutex": {
+                          "ids": [
+                              "rowType",
+                              "showExtra"
+                          ]
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "label": "跳转页面",
+                      "text": "选择微页面",
+                      "activeType": "link",
+                      "id": "miniPage",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {},
+                      "listPage": {
+                          "requestParam": {
+                              "options":{
+                                  "type": "shopActivity"
+                              },
+                              "url":"/api/icommerce-mgmt//v1/page/edit/list"
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "标题",
+                                      "dataIndex": "name"
+                                  },
+                                  {
+                                      "title": "创建时间",
+                                      "dataIndex": "createTime"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "name",
+                          "code": "code",
+                          "id": "itemId",
+                          "newUrl": "newUrl",
+                          "children": "title",
+                          "text": "name"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": true,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                          "rowType": "verticalSlide",
+                          "showExtra": true,
+                          "extraLinkType": "miniPage"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "rowType",
+                              "showExtra",
+                              "extraLinkType"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

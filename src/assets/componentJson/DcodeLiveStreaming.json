@@ -1,0 +1,425 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "直播组件",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "样式布局",
+                          "id": "rowType",
+                          "defaultValue": "0",
+                          "inline": true,
+                          "buttonStyle": "icon",
+                          "data": [
+                              {
+                                  "label": "小图",
+                                  "value": "0",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/22.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/21.png"
+                              },
+                              {
+                                  "label": "大图",
+                                  "value": "1",
+                                  "src": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/2.png",
+                                  "srcSelected": "https://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/page-editimg/2_2.png"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Select",
+                      "controlItemParam": {
+                          "label": "直播状态",
+                          "id": "live_status",
+                          "defaultValue": 101,
+                          "data": [
+                              {
+                                  "label": "直播中",
+                                  "value": 101
+                              },
+                              {
+                                  "label": "未开始",
+                                  "value": 102
+                              },
+                              {
+                                  "label": "已结束",
+                                  "value": 103
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "live_status",
+                              "live_name",
+                              "live_show",
+                              "live_buttom"
+                          ],
+                          "data": [
+                              {
+                                  "label": "直播状态",
+                                  "value": "live_status"
+                              },
+                              {
+                                  "label": "主播名称",
+                                  "value": "live_name"
+                              },
+                              {
+                                  "label": "立即观看",
+                                  "value": "live_show"
+                              },
+                              {
+                                  "label": "分享按钮",
+                                  "value": "live_buttom"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "live_status"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "live_status",
+                              "live_name",
+                              "live_show",
+                              "live_buttom"
+                          ],
+                          "data": [
+                              {
+                                  "label": "直播状态",
+                                  "value": "live_status"
+                              },
+                              {
+                                  "label": "主播名称",
+                                  "value": "live_name"
+                              },
+                              {
+                                  "label": "前往订阅",
+                                  "value": "live_show"
+                              },
+                              {
+                                  "label": "分享按钮",
+                                  "value": "live_buttom"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "live_status"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "显示字段",
+                          "id": "showKeys",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [
+                              "live_status",
+                              "live_name",
+                              "live_show",
+                              "live_buttom"
+                          ],
+                          "data": [
+                              {
+                                  "label": "直播状态",
+                                  "value": "live_status"
+                              },
+                              {
+                                  "label": "主播名称",
+                                  "value": "live_name"
+                              },
+                              {
+                                  "label": "观看回放",
+                                  "value": "live_show"
+                              },
+                              {
+                                  "label": "分享按钮",
+                                  "value": "live_buttom"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "live_status"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "输入直播间个数",
+                          "id": "live_num",
+                          "defaultValue": "",
+                          "min": 0
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "是否需要标题组件",
+                          "defaultValue": true,
+                          "id": "showTitle",
+                          "data": [
+                              {
+                                  "label": "是",
+                                  "value": true
+                              },
+                              {
+                                  "label": "否",
+                                  "value": false
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "标题",
+                          "id": "title",
+                          "rules": {
+                              "max": 12,
+                              "required": true
+                          }
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "标题粗细",
+                          "id": "weight",
+                          "type": "group",
+                          "defaultValue": "0",
+                          "inline": true,
+                          "data": [
+                              {
+                                  "label": "加粗",
+                                  "value": "0",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/big.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/big1.png"
+                              },
+                              {
+                                  "label": "正常",
+                                  "value": "1",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/small.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/small1.png"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "显示位置",
+                          "id": "titleAlign",
+                          "defaultValue": "0",
+                          "inline": true,
+                          "buttonStyle": "icon",
+                          "data": [
+                              {
+                                  "label": "左对齐",
+                                  "value": "0",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/textLeft.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/textLeft1.png"
+                              },
+                              {
+                                  "label": "居中",
+                                  "value": "1",
+                                  "src": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/textCenter.png",
+                                  "srcSelected": "http://yunxi-dev.oss-cn-shenzhen.aliyuncs.com/yunxi-dev-huieryun/assets/textCenter1.png"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "标题大小",
+                          "id": "titleSize",
+                          "defaultValue": 14,
+                          "max": 26,
+                          "min": 14,
+                          "rules": {
+                              "required": true
+                          }
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "id": "titleColor",
+                          "label": "标题颜色",
+                          "defaultValue": "#000000"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "背景设置",
+                          "id": "Radios",
+                          "inline": true,
+                          "data": [
+                              {
+                                  "label": "无填充",
+                                  "value": "0"
+                              },
+                              {
+                                  "label": "颜色填充",
+                                  "value": "1"
+                              },
+                              {
+                                  "label": "图片填充",
+                                  "value": "2"
+                              }
+                          ],
+                          "defaultValue": "0"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "id": "bgColor",
+                          "label": "颜色填充",
+                          "defaultValue": "#ffffff"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "Radios"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Upload",
+                      "controlItemParam": {
+                          "id": "bgImg",
+                          "label": "图片填充",
+                          "type": "img",
+                          "limit": 1,
+                          "url": "http://cd-demo-tspj.k8s.dtyunxi.cn/api/icommerce-mgmt/v1/huieryun/objectstorage/policy/cube/getpolicy"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "Radios"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Checkbox",
+                      "controlItemParam": {
+                          "label": "查看更多",
+                          "id": "showMore",
+                          "type": "group",
+                          "inline": true,
+                          "buttonStyle": "solid",
+                          "defaultValue": [],
+                          "data": [
+                              {
+                                  "label": "启用",
+                                  "value": "more"
+                              }
+                          ]
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showTitle"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "id": "moreText",
+                          "label": "文案",
+                          "defaultValue": "查看更多",
+                          "rules": {
+                              "max": 6,
+                              "required": true
+                          }
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showMore"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "id": "moreColor",
+                          "label": "颜色",
+                          "defaultValue": "#000000"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "showMore"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "tool",
+              "label": "分享按钮",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "tool",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "大小",
+                          "id": "btnSize",
+                          "defaultValue": 200,
+                          "min": "1"
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "展示规则",
+                          "id": "isFixed",
+                          "defaultValue": true,
+                          "data": [
+                              {
+                                  "label": "悬浮",
+                                  "value": true
+                              },
+                              {
+                                  "label": "固定",
+                                  "value": false
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "textLabel": "选择商品",
+                      "text": "商品页面",
+                      "id": "product",
+                      "inline": true,
+                      "inputParams": {
+                          "type": "dashed",
+                          "icon": "plus",
+                          "size": "large"
+                      },
+                      "popupParam": {
+                          "width": 800
+                      },
+                      "listPage": {
+                          "requestParam": {
+                              "options":{
+                                  "status": 1,
+                                  "busType": 0,
+                                  "groupBy": 2
+                              },
+                              "url":"/api/icommerce-mgmt//v1/item/list"
+                          },
+                          "panelParam": {
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "itemName",
+                                          "label": "商品名称",
+                                          "defaultValue": "",
+                                          "placeholder": "请输入商品名称",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "type": "TreeSelect",
+                                      "controlItemParam": {
+                                          "id": "frontDirId",
+                                          "label": "前台类目",
+                                          "defaultValue": "",
+                                          "requestParam": {
+                                          "options": {
+                                              "showDisable": 1
+                                          },
+                                          "url": "/api/icommerce-mgmt//v1/item/category/shop/tree",
+                                          "url2": "/api/icommerce-mgmt//v1/item/category/front/tree"
+                                        }
+                                      }
+                                  }
+                              ]
+                          },
+                          "tableParam": {
+                              "rowKey": "itemId",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "dataIndex": "itemCode",
+                                      "title": "商品编码"
+                                  },
+                                  {
+                                      "dataIndex": "itemName",
+                                      "title": "商品名称"
+                                  },
+                                  {
+                                      "dataIndex": "minSellPrice",
+                                      "title": "售价"
+                                  },
+                                  {
+                                      "dataIndex": "itemTotalStorage",
+                                      "title": "库存"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "id": "itemId",
+                          "children": "itemName"
+                      },
+                      "textParam": {
+                          "controlType": "String"
+                      },
+                      "mapValue": {
+                         "linkType": "product"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "linkType"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Remote",
+                      "textLabel": "跳转页面",
+                      "text": "选择微页面",
+                      "activeType": "link",
+                      "id": "miniPage",
+                      "styleType": "link",
+                      "inline": true,
+                      "popupParam": {},
+                      "listPage": {
+                          "requestParam": {
+                              "url": "xx",
+                              "method": "GET",
+                              "filterEmpty": true
+                          },
+                          "tableParam": {
+                              "rowKey": "itemId",
+                              "rowSelection": {
+                                  "type": "radio"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "标题",
+                                      "dataIndex": "name"
+                                  },
+                                  {
+                                      "title": "创建时间",
+                                      "dataIndex": "createTime"
+                                  }
+                              ]
+                          }
+                      },
+                      "template": {
+                          "value": "name",
+                          "code": "code",
+                          "id": "itemId",
+                          "newUrl": "newUrl",
+                          "children": "title",
+                          "text": "name"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": true,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      },
+                      "mapValue": {
+                         "linkType": "miniPage"
+                      },
+                      "mutex": {
+                          "ids": [
+                              "linkType"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

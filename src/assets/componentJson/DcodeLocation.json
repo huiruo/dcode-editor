@@ -1,0 +1,15 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "定位组件",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": []
+  }
+}

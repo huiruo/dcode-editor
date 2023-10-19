@@ -1,0 +1,68 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "cross-env UMI_ENV=test umi dev",
+    "uat": "cross-env UMI_ENV=uat umi dev",
+    "prod": "cross-env UMI_ENV=prod umi dev",
+    "build:dev": "cross-env UMI_ENV=test umi build",
+    "build:uat": "cross-env UMI_ENV=uat umi build",
+    "build:prod": "cross-env UMI_ENV=prod umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "lint": "prettier --check .",
+    "lint-staged": "lint-staged",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,tsx,ts}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "antd": "5.8.3",
+    "antd-mobile": "^5.32.0",
+    "react-redux": "^8.1.0",
+    "react-rnd": "^10.4.1",
+    "formik": "^2.4.2",
+    "js-cookie": "^3.0.5",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "yup": "^1.2.0",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "umi": "^3.5.41"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@types/lodash": "^4.14.195",
+    "@types/lodash-es": "^4.17.8",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "@umijs/preset-react": "^1.8.32",
+    "@umijs/test": "^3.5.41",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.8.8",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

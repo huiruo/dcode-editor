@@ -1,0 +1,75 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "企微识别码",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "Upload",
+                      "controlItemParam": {
+                          "id": "imgUrl",
+                          "label": "图片链接",
+                          "type": "img",
+                          "submitType": "array",
+                          "isFileNameConfusion": false,
+                          "url": "xx",
+                          "styleParam": {
+                              "size": "middle"
+                          },
+                          "limit": 1,
+                          "rules": {
+                              "required": true
+                          }
+                      }
+                  },
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "是否圆角",
+                          "id": "requireRadius",
+                          "defaultValue": false
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "企微码展示X坐标",
+                          "id": "axisX",
+                          "min": 0,
+                          "defaultValue": ""
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "企微码展示Y坐标",
+                          "id": "axisY",
+                          "min": 0,
+                          "defaultValue": ""
+                      }
+                  },
+                  {
+                      "type": "Number",
+                      "controlItemParam": {
+                          "label": "企微码边长",
+                          "id": "width",
+                          "min": 0,
+                          "defaultValue": ""
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

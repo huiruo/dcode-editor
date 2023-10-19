@@ -1,0 +1,359 @@
+{
+    "resultCode": 0,
+    "resultMsg": "",
+    "data": {
+        "resources": [
+            {
+                "templateId": "main",
+                "noSymbol": true,
+                "formItems": [
+                    {
+                        "type": "pureFormTabs",
+                        "controlItemParam": {
+                            "label": "tabs",
+                            "id": "tabSelectedVal",
+                            "defaultValue": "visitor"
+                        },
+                        "formItems": [
+                            {
+                                "type": "tab",
+                                "formItems": [
+                                    {
+                                        "type": "tab",
+                                        "id": "visitor",
+                                        "text": "未登录设置"
+                                    },
+                                    {
+                                        "type": "tab",
+                                        "id": "user",
+                                        "text": "已登录设置"
+                                    }
+                                ]
+                            },
+                            {
+                                "templateId": "visitor",
+                                "type": "dataList",
+                                "label": "未登录组件",
+                                "formItems": [
+                                    {
+                                        "type": "Columns",
+                                        "label": "主标题",
+                                        "dataId": "vMainTitle",
+                                        "formItems": [
+                                            {
+                                                "type": "String",
+                                                "controlItemParam": {
+                                                    "id": "vMainTitle",
+                                                    "label": "标题",
+                                                    "defaultValue": "注册即享新人礼",
+                                                    "rules": {
+                                                        "max": 12,
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "vMainTitleColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#262626",
+                                                    "rules": {
+                                                        "required": true
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "副标题",
+                                        "dataId": "vSubTitle",
+                                        "formItems": [
+                                            {
+                                                "type": "String",
+                                                "controlItemParam": {
+                                                    "id": "vSubTitle",
+                                                    "label": "标题",
+                                                    "defaultValue": "立即登录享超值福利",
+                                                    "rules": {
+                                                        "max": 20,
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "vSubTitleColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#666666",
+                                                    "rules": {
+                                                        "required": true
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "dataId": "vBtn",
+                                        "label": "按钮",
+                                        "formItems": [
+                                            {
+                                                "type": "String",
+                                                "controlItemParam": {
+                                                    "id": "vBtnTitle",
+                                                    "label": "标题",
+                                                    "defaultValue": "立即登录",
+                                                    "rules": {
+                                                        "max": 6,
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "vBtnColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#ffffff",
+                                                    "rules": {
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "vBtnBgColor",
+                                                    "label": "按钮背景颜色",
+                                                    "defaultValue": "#262626",
+                                                    "rules": {
+                                                        "required": true
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Upload",
+                                        "dataId": "vBgUrl",
+                                        "controlItemParam": {
+                                            "id": "vBgUrl",
+                                            "label": "背景图",
+                                            "defaultValue": "https://tspj-zt-oss-uat.oss-cn-beijing.aliyuncs.com/Applet/images/memberBg.png",
+                                            "type": "img",
+                                            "extra": "尺寸：750*164px,JPG/JPEG/GIF/PNG",
+                                            "isFileNameConfusion": false,
+                                            "styleParam": {
+                                                "size": "middle"
+                                            },
+                                            "limit": 1,
+                                            "rules": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "templateId": "user",
+                                "type": "dataList",
+                                "label": "已登录组件",
+                                "formItems": [
+                                    {
+                                        "type": "MemberMode",
+                                        "dataId": "memberMode",
+                                        "controlItemParam": {
+                                            "label": "会员等级",
+                                            "id": "memberMode",
+                                            "defaultValue": "潜客"
+                                        }
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "用户昵称",
+                                        "dataId": "nickname",
+                                        "formItems": [
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "nicknameColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#262626"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "成长值信息-黑钻",
+                                        "dataId": "highestGrowth",
+                                        "formItems": [
+                                            {
+                                                "type": "String",
+                                                "controlItemParam": {
+                                                    "id": "highestGrowthText",
+                                                    "label": "文案",
+                                                    "defaultValue": "尊贵的黑钻卡会员，请尽情享受权益",
+                                                    "rules": {
+                                                        "max": 16,
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "highestGrowthColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#666666"
+                                                }
+                                            }
+                                        ],
+                                        "mapValue": {
+                                            "memberMode": "黑钻卡"
+                                        },
+                                        "mutex": {
+                                            "ids": [
+                                                "memberMode"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "成长值信息-潜客",
+                                        "dataId": "baseGrowth",
+                                        "formItems": [
+                                            {
+                                                "type": "String",
+                                                "controlItemParam": {
+                                                    "id": "baseGrowthText",
+                                                    "label": "文案",
+                                                    "defaultValue": "欢迎进入XX商城",
+                                                    "rules": {
+                                                        "max": 16,
+                                                        "required": true
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "baseGrowthColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#666666"
+                                                }
+                                            }
+                                        ],
+                                        "mapValue": {
+                                            "memberMode": "潜客"
+                                        },
+                                        "mutex": {
+                                            "ids": [
+                                                "memberMode"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "成长值信息-普通",
+                                        "dataId": "normalGrowth",
+                                        "formItems": [
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "normalGrowthColor",
+                                                    "label": "字体颜色",
+                                                    "defaultValue": "#666666"
+                                                }
+                                            }
+                                        ],
+                                        "mapValue": {
+                                            "memberMode": [
+                                                "潜客",
+                                                "黑钻卡"
+                                            ]
+                                        },
+                                        "mutex": {
+                                            "ids": [
+                                                "memberMode"
+                                            ],
+                                            "rules": false
+                                        }
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "优惠券",
+                                        "dataId": "coupon",
+                                        "formItems": [
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "couponZhColor",
+                                                    "label": "中文颜色",
+                                                    "defaultValue": "#666666"
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "couponNumColor",
+                                                    "label": "数字颜色",
+                                                    "defaultValue": "#262626"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Columns",
+                                        "label": "积分",
+                                        "dataId": "points",
+                                        "formItems": [
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "pointsZhColor",
+                                                    "label": "中文颜色",
+                                                    "defaultValue": "#666666"
+                                                }
+                                            },
+                                            {
+                                                "type": "ColorPicker",
+                                                "controlItemParam": {
+                                                    "id": "pointsNumColor",
+                                                    "label": "数字颜色",
+                                                    "defaultValue": "#262626"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Upload",
+                                        "dataId": "userBgUrl",
+                                        "controlItemParam": {
+                                            "id": "userBgUrl",
+                                            "label": "背景图",
+                                            "defaultValue": "https://tspj-zt-oss-uat.oss-cn-beijing.aliyuncs.com/Applet/images/memberBg.png",
+                                            "type": "img",
+                                            "extra": "尺寸：750*164px,JPG/JPEG/GIF/PNG",
+                                            "isFileNameConfusion": false,
+                                            "styleParam": {
+                                                "size": "middle"
+                                            },
+                                            "limit": 1,
+                                            "rules": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

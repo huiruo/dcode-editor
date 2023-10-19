@@ -1,0 +1,274 @@
+//基本单位/Basic Unit
+@tp_tpHd: 1px;
+
+//禁用字色; 占位符(placeholder)
+@tp_tpColor_neutral_b4: rgba(0, 0, 0, 0.25);
+
+//颜色体系---品牌色/Brand Color
+@tp_tpColor_brand_0: #FFFFFF;
+
+//品牌色，主要组件深色背景（Deep)
+@tp_tpColor_brand_1: #FF8718;
+
+//品牌色，主要组件一级背景（Primary）
+@tp_tpColor_brand_2: #FF8718;
+
+//品牌色，主要组件次级背景（Light）
+@tp_tpColor_brand_3: #FFF3ED;
+
+//品牌色，页面默认背景（Default）
+@tp_tpColor_brand_4: #F5F7FA;
+
+//品牌色，页面默认背景（Default）
+@tp_tpColor_brand_5: #E61E1E;
+
+//品牌色，页面默认背景（Default）
+@tp_tpColor_brand_6: #f08719;
+
+// 营销色
+@tp_tpColor_mkt_1: #e83b28;
+@tp_tpColor_mkt_2: fade(#e83b28, 85%);
+@tp_tpColor_mkt_3: fade(#e83b28, 65%);
+@tp_tpColor_mkt_4: fade(#e83b28, 45%);
+@tp_tpColor_mkt_5: fade(#e83b28, 25%);
+@tp_tpColor_mkt_6: fade(#e83b28, 15%);
+@tp_tpColor_mkt_7: fade(#e83b28, 09%);
+
+@tp_tpColor_neutral_w1: rgba(255, 255, 255, 1);
+
+@zoom:4px;
+@zoom1:-1.28rem;
+.zoom{
+  z-index: 900;
+  position: absolute;
+}
+@diagonally_range: -1.28rem;
+.diagonally{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 900;
+}
+
+
+//超出2行隐藏...
+.tp_overflow_hidden(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer  : ignore next */
+  -webkit-line-clamp: @line;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.font-size1 {
+  font-size: 18px;
+}
+
+.font-size2 {
+  font-size: 13px;
+}
+
+.font-weight {
+  font-weight: 500
+}
+
+.common-right-mg4 {
+  margin-right: 4px;
+}
+
+.common-bottom-mb4 {
+  margin-bottom: 4px;
+}
+
+.common-left-mg {
+  margin-left: 10px;
+}
+
+.common-right-mg {
+  margin-right: 10px;
+}
+
+.common-bottom-mg1 {
+  margin-bottom: 8px;
+}
+
+.common-bottom-mg {
+  margin-bottom: 10px;
+}
+
+.common-top-mg {
+  margin-top: 10px;
+}
+
+.common-top1-mg {
+  margin-top: 6px;
+}
+
+.common-top2-mg {
+  margin-top: 20px;
+}
+
+.tp-flex{
+  display:flex;
+}
+
+.flex-direction-col{
+  display: flex;
+  flex-direction: column;
+}
+
+// 文字一行缩略
+.overflow_hidden_one {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+// 竖向布局居中
+.flex_column_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// 横向布局居中
+.flex_row_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex_row_between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+//布局的边距
+.cont_pad(@top: 8, @ri: 16, @bot: 8, @le: 16) {
+  padding: @top* @tp_tpHd @ri* @tp_tpHd @bot* @tp_tpHd @le* @tp_tpHd;
+}
+
+//清浮动
+.clear_float {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+// 清除浮动
+.clearfix {
+  zoom: 1;
+  &::after {
+    .clear_float;
+  }
+}
+
+//注释
+.tp_tpFont_caption1_medium() {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+//注释
+.tp_tpFont_caption1_regular() {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+//小注释
+.tp_tpFont_caption2_medium() {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+//小注释
+.tp_tpFont_caption2_regular() {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+//小注释
+.tp_tpFont_label_regular() {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.tp_tpFont_heading2_medium () {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+//超大标题
+.tp_tpRadius_default {
+  border-radius: 8 * @tp_tpHd;
+}
+
+//大标题
+.tp_tpFont_heading_medium() {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+//大数字如金额
+.tp_tpFont_heading3_medium() {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+//中标题
+.tp_tpFont_title_medium() {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+//小标题
+.tp_tpFont_subhead_medium() {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+//正文
+.tp_tpFont_body1_regular() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+//正文详情
+.tp_tpFont_body2_regular() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.ant-menu{
+  li{
+    border-radius: 0px !important;
+    width: 100% !important;
+    margin: 0px !important;
+  }
+}

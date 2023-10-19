@@ -1,0 +1,715 @@
+{
+    "resultCode": 0,
+    "resultMsg": "",
+    "data": {
+        "params": [
+            {
+                "templateId": "main",
+                "label": "banner组件",
+                "mode": "form",
+                "id": "_main"
+            }
+        ],
+        "resources": [
+            {
+                "templateId": "main",
+                "noSymbol": true,
+                "formItems": [
+                    {
+                        "type": "Number",
+                        "controlItemParam": {
+                            "label": "轮播图高度",
+                            "id": "height",
+                            "max": 1000,
+                            "min": 0,
+                            "defaultValue": "260"
+                        }
+                    },
+                    {
+                        "type": "Switch",
+                        "controlItemParam": {
+                            "label": "是否自动切换",
+                            "id": "autoplay",
+                            "max": 1000,
+                            "min": 0,
+                            "defaultValue": false
+                        }
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "Proliferation",
+                        "templateId": "dataList",
+                        "parentLabel": "图片列表",
+                        "label": "图片列表",
+                        "id": "data",
+                        "popup": false,
+                        "maxCount": 10,
+                        "popupParam": {
+                            "popupType": "drawer"
+                        }
+                    }
+                ]
+            },
+            {
+                "templateId": "dataList",
+                "dataId": "data",
+                "noSymbol": true,
+                "label": "图片列表",
+                "formItems": [
+                    {
+                        "type": "PositionMove",
+                        "controlItemParam": {
+                            "id": "positionMove",
+                            "label": "移动位置",
+                            "type": "action",
+                            "isFileNameConfusion": false
+                        }
+                    },
+                    {
+                        "type": "Upload",
+                        "controlItemParam": {
+                            "id": "imgUrl",
+                            "label": "图片链接",
+                            "type": "img",
+                            "isFileNameConfusion": false,
+                            "styleParam": {
+                                "size": "middle"
+                            },
+                            "limit": 1,
+                            "rules": {
+                                "required": true
+                            }
+                        }
+                    },
+                    {
+                        "type": "Radio",
+                        "controlItemParam": {
+                            "id": "areaShow",
+                            "defaultValue": true,
+                            "label": "地区可见",
+                            "data": [
+                                {
+                                    "value": true,
+                                    "label": "全部可见"
+                                },
+                                {
+                                    "value": false,
+                                    "label": "部分可见"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "TreeSelect",
+                        "controlItemParam": {
+                            "id": "area",
+                            "label": "选择区域",
+                            "rules": {
+                                "required": true
+                            },
+                            "submitType": "array",
+                            "inputParam": {
+                                "multiple": true
+                            },
+                            "requestParam": {
+                                "url":"json",
+                                "options":{},
+                                "rules":{
+                                    "willReqValue": false,
+                                    "dataId": "area"
+                                }
+                            }
+                        },
+                        "mapValue": {
+                            "areaShow": false
+                        },
+                        "mutex": {
+                            "ids": [
+                                "areaShow"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Radio",
+                        "controlItemParam": {
+                            "id": "levelShow",
+                            "label": "等级可见",
+                            "defaultValue": true,
+                            "data": [
+                                {
+                                    "value": true,
+                                    "label": "全部可见"
+                                },
+                                {
+                                    "value": false,
+                                    "label": "部分可见"
+                                }
+                            ],
+                            "requestParam": {
+                                "url":"/api/icommerce-mgmt//v1/user/member/memberLevelDefine/list",
+                                "options":{},
+                                "rules":{
+                                    "willReqValue": false,
+                                    "dataId": "level"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "Select",
+                        "controlItemParam": {
+                            "id": "level",
+                            "label": "会员等级",
+                            "rules": {
+                                "required": true
+                            },
+                            "submitType": "array",
+                            "inputParam": {
+                                "mode": "multiple"
+                            },
+                            "requestParam": {
+                                "url": "/api/icommerce-mgmt//v1/user/member/memberLevelDefine/list",
+                                "method": "GET"
+                            }
+                        },
+                        "mapValue": {
+                            "levelShow": false
+                        },
+                        "mutex": {
+                            "ids": [
+                                "levelShow"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Radio",
+                        "controlItemParam": {
+                            "id": "crowdPackLimit",
+                            "defaultValue": false,
+                            "label": "人群包可见",
+                            "rules": {
+                                "required": true
+                            },
+                            "data": [
+                                {
+                                    "value": false,
+                                    "label": "全部可见"
+                                },
+                                {
+                                    "value": true,
+                                    "label": "部分可见"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Remote",
+                        "label": "选择人群包",
+                        "text": "人群包标签",
+                        "id": "crowdPack",
+                        "activeType": "data",
+                        "controlItemParam": {
+                            "id": "crowdPack",
+                            "rules": {
+                                "required": true
+                            },
+                            "submitType": "array"
+                        },
+                        "listPage": {
+                            "requestParam": {
+                                "options":{
+                                    "status": 1,
+                                    "type": 1,
+                                    "groupType": 1
+                                },
+                                "url": "/api/imarketing/v1/cluster/page?type=1"
+                            },
+                            "tableParam": {
+                                "rowKey": "remoteGroupId",
+                                "rowSelection": {
+                                    "type": "checkbox"
+                                },
+                                "columns": [
+                                    {
+                                        "dataIndex": "name",
+                                        "title": "人群包名称"
+                                    },
+                                    {
+                                        "dataIndex": "coveredNum",
+                                        "title": "覆盖人数"
+                                    },
+                                    {
+                                        "dataIndex": "status",
+                                        "title": "状态",
+                                        "render": {
+                                            "type": "enum",
+                                            "enumValues": {
+                                              "0": "禁用",
+                                              "1": "启用"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "dataIndex": "syncStatus",
+                                        "title": "同步状态",
+                                        "render": {
+                                            "type": "enum",
+                                            "enumValues": {
+                                                "0": "计算完成",
+                                                "1": "正在计算",
+                                                "2": "计算完成",
+                                                "3": "计算失败"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "dataIndex": "pkgType",
+                                        "title": "人群包类型",
+                                        "render": {
+                                            "type": "enum",
+                                            "enumValues": {
+                                                "2": "人工导入",
+                                                "1": "标签创建",
+                                                "3": "分析平台创建"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "dataIndex": "updatePerson",
+                                        "title": "更新人"
+                                    }
+                                ]
+                            }
+                        },
+                        "mapValue": {
+                            "crowdPackLimit": true
+                        },
+                        "mutex": {
+                            "ids": [
+                                "crowdPackLimit"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Select",
+                        "controlItemParam": {
+                            "id": "linkType",
+                            "label": "链接类型",
+                            "inline": true,
+                            "defaultValue": "page",
+                            "data": [
+                                {
+                                    "label": "页面",
+                                    "value": "page"
+                                },
+                                {
+                                    "label": "商品",
+                                    "value": "product"
+                                },
+                                {
+                                    "label": "酒单",
+                                    "value": "category"
+                                },
+                                {
+                                    "label": "微页面",
+                                    "value": "miniPage"
+                                },
+                                {
+                                    "label": "优惠券",
+                                    "value": "coupon"
+                                },
+                                {
+                                    "label": "自定义",
+                                    "value": "customPage"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Select",
+                        "controlItemParam": {
+                            "id": "page",
+                            "label": "跳转页面",
+                            "defaultValue": "",
+                            "data": [
+                                {
+                                    "label": "首页",
+                                    "value": "/pages/pageNgine/index"
+                                },
+                                {
+                                    "label": "购物车",
+                                    "value": "/pages/pageNgine/item/cart/index"
+                                },
+                                {
+                                    "label": "酒单",
+                                    "value": "/pages/pageNgine/item/category/index"
+                                },
+                                {
+                                    "label": "订单列表页",
+                                    "value": "/pages/pageNgine/orderList/index"
+                                },
+                                {
+                                    "label": "我的",
+                                    "value": "/pages/memberCenter/index"
+                                },
+                                {
+                                    "label": "领券中心",
+                                    "value": "/pages/pageNgine/coupon/couponReceive/index"
+                                },
+                                {
+                                    "label": "我的卡券",
+                                    "value": "/pages/pageNgine/coupon/myCoupon/index"
+                                },
+                                {
+                                    "label": "我的收藏",
+                                    "value": "/pages/pageNgine/myFavorite/index"
+                                },
+                                {
+                                    "label": "浏览足迹",
+                                    "value": "/pages/pageNgine/myFootprint/index"
+                                },
+                                {
+                                    "label": "平台客服",
+                                    "value": "CUSTOMER_SERVICE_PLATFORM"
+                                },
+                                {
+                                    "label": "店铺客服",
+                                    "value": "CUSTOMER_SERVICE_SHOP"
+                                },
+                                {
+                                    "label": "注册登录页",
+                                    "value": "/pages/login/index"
+                                }
+                            ]
+                        },
+                        "mapValue": {
+                            "linkType":"page"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "TreeSelect",
+                        "controlItemParam": {
+                            "id": "category",
+                            "label": "选择分类",
+                            "inputParams": {
+                                "listHeight": 300
+                            },
+                            "defaultValue": "",
+                            "requestParam": {
+                                "url":"/api/icommerce-mgmt//v1/item/category/shop/tree",
+                                "options":{
+                                    "shopId": true
+                                }
+                            }
+                        },
+                        "mapValue": {
+                            "linkType":"category"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "String",
+                        "controlItemParam": {
+                            "id": "customPage",
+                            "label": "跳转链接",
+                            "placeholder": "请输入链接",
+                            "defaultValue": "",
+                            "rules": {
+                                "max": 500
+                            }
+                        },
+                        "mapValue": {
+                            "linkType":"customPage"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "Remote",
+                        "label": "选择商品",
+                        "text": "商品页面",
+                        "id": "product",
+                        "inline": true,
+                        "inputParams": {
+                            "type": "dashed",
+                            "icon": "plus",
+                            "size": "large"
+                        },
+                        "popupParam": {
+                            "width": 800
+                        },
+                        "listPage": {
+                            "requestParam": {
+                                "options":{
+                                    "status": 1,
+                                    "busType": 0,
+                                    "groupBy": 2
+                                },
+                                "url":"/api/icommerce-mgmt//v1/item/list"
+                            },
+                            "panelParam": {
+                                "items": [
+                                    {
+                                        "type": "String",
+                                        "controlItemParam": {
+                                            "id": "itemName",
+                                            "label": "商品名称",
+                                            "defaultValue": "",
+                                            "placeholder": "请输入商品名称",
+                                            "rules":{
+                                                "max": 50
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "TreeSelect",
+                                        "controlItemParam": {
+                                            "id": "frontDirId",
+                                            "label": "前台类目",
+                                            "defaultValue": "",
+                                            "requestParam": {
+                                                "options": {
+                                                    "showDisable": 1
+                                                },
+                                                "url": "/api/icommerce-mgmt//v1/item/category/shop/tree",
+                                                "url2": "/api/icommerce-mgmt//v1/item/category/front/tree"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "tableParam": {
+                                "rowKey": "id",
+                                "rowSelection": {
+                                    "type": "radio"
+                                },
+                                "columns": [
+                                    {
+                                        "dataIndex": "itemCode",
+                                        "title": "商品编码"
+                                    },
+                                    {
+                                        "dataIndex": "itemName",
+                                        "title": "商品名称"
+                                    },
+                                    {
+                                        "dataIndex": "minSellPrice",
+                                        "title": "售价"
+                                    },
+                                    {
+                                        "dataIndex": "itemTotalStorage",
+                                        "title": "库存"
+                                    }
+                                ]
+                            }
+                        },
+                        "template": {
+                            "id": "itemId",
+                            "children": "itemName"
+                        },
+                        "textParam": {
+                            "controlType": "String"
+                        },
+                        "mapValue": {
+                            "linkType":"product"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Remote",
+                        "label": "选择优惠券",
+                        "text": "优惠券",
+                        "activeType": "link",
+                        "id": "coupon",
+                        "inline": true,
+                        "inputParams": {
+                            "type": "dashed",
+                            "icon": "plus",
+                            "size": "large"
+                        },
+                        "popupParam": {
+                            "width": 800
+                        },
+                        "listPage": {
+                            "requestParam": {
+                                "options":{
+                                    "receiveType": 1
+                                },
+                                "url": "/api/promotion/v2/marketing/tai/coupon/template/page"
+                            },
+                            "panelParam": {
+                                "items": [
+                                    {
+                                        "type": "String",
+                                        "controlItemParam": {
+                                            "id": "couponTemplateName",
+                                            "label": "优惠券模板",
+                                            "defaultValue": "",
+                                            "placeholder": "请输入优惠券模板",
+                                            "rules":{
+                                                "max": 50
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "String",
+                                        "controlItemParam": {
+                                            "id": "couponTemplateCode",
+                                            "label": "模板编号",
+                                            "defaultValue": "",
+                                            "placeholder": "请输入模板编号",
+                                            "rules":{
+                                                "max": 30
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "tableParam": {
+                                "rowKey": "id",
+                                "rowSelection": {
+                                    "type": "radio"
+                                },
+                                "columns": [
+                                    {
+                                        "dataIndex": "couponName",
+                                        "title": "优惠券模板"
+                                    },
+                                    {
+                                        "dataIndex": "couponCode",
+                                        "title": "模板编号"
+                                    },
+                                    {
+                                        "dataIndex": "couponCategory",
+                                        "title": "类型",
+                                        "render": {
+                                            "type": "enum",
+                                            "enumValues": {
+                                              "10": "满减券",
+                                              "40": "兑换券",
+                                              "50": "折扣券",
+                                              "70": "赠品券"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "dataIndex": "receiveStartTime",
+                                        "title": "开放领取时间",
+                                        "render": {
+                                            "type": "startEndTime",
+                                            "renderKeys": ["receiveStartTime","receiveEndTime"]
+                                        }
+                                    },
+                                    {
+                                        "dataIndex": "couponTemplateStatus",
+                                        "title": "状态",
+                                        "render": {
+                                            "type": "enum",
+                                            "enumValues": {
+                                              "10": "未启用",
+                                              "20": "已启用",
+                                              "30": "已禁用",
+                                              "40": "已结束"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "template": {
+                            "id": "route",
+                            "children": "couponName"
+                        },
+                        "textParam": {
+                            "controlType": "String"
+                        },
+                        "mapValue": {
+                            "linkType":"coupon"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Remote",
+                        "label": "跳转页面",
+                        "text": "选择微页面",
+                        "activeType": "link",
+                        "id": "miniPage",
+                        "styleType": "link",
+                        "inline": true,
+                        "popupParam": {},
+                        "listPage": {
+                            "requestParam": {
+                                "options":{
+                                    "type": "shopActivity"
+                                },
+                                "url":"/api/icommerce-mgmt//v1/page/edit/list"
+                            },
+                            "tableParam": {
+                                "rowKey": "id",
+                                "rowSelection": {
+                                    "type": "radio"
+                                },
+                                "columns": [
+                                    {
+                                        "title": "标题",
+                                        "dataIndex": "name"
+                                    },
+                                    {
+                                        "title": "创建时间",
+                                        "dataIndex": "createTime"
+                                    }
+                                ]
+                            }
+                        },
+                        "template": {
+                            "value": "name",
+                            "code": "code",
+                            "id": "itemId",
+                            "newUrl": "newUrl",
+                            "children": "title",
+                            "text": "name"
+                        },
+                        "textParam": {
+                            "controlType": "Tag",
+                            "closable": true,
+                            "styleParam": {
+                                "size": "large"
+                            }
+                        },
+                        "mapValue": {
+                            "linkType": "miniPage"
+                        },
+                        "mutex": {
+                            "ids": [
+                                "linkType"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

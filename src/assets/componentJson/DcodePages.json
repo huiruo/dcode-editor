@@ -1,0 +1,134 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "页面标题设置",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "页面标题",
+                          "id": "pageTitle",
+                          "rules":{
+                            "max": 30
+                          }
+                      }
+                  },
+                  {
+                      "type": "Radio",
+                      "controlItemParam": {
+                          "label": "背景设置",
+                          "id": "Radios",
+                          "inline": true,
+                          "data": [
+                              {
+                                  "label": "颜色填充",
+                                  "value": "1"
+                              },
+                              {
+                                  "label": "图片填充",
+                                  "value": "2"
+                              }
+                          ],
+                          "defaultValue": "1"
+                      }
+                  },
+                  {
+                      "type": "ColorPicker",
+                      "controlItemParam": {
+                          "id": "bgColor",
+                          "label": "选择背景颜色",
+                          "defaultValue": "#ffffff"
+                      },
+                      "mapValue": {
+                        "Radios": "1"
+                    },
+                      "mutex": {
+                          "ids": [
+                              "Radios"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Upload",
+                      "controlItemParam": {
+                          "id": "bgImg",
+                          "label": "选择背景图片",
+                          "type": "img",
+                          "limit": 1,
+                          "url": "xx",
+                          "submitType": "array"
+                      },
+                      "mapValue": {
+                        "Radios": "2"
+                    },
+                      "mutex": {
+                          "ids": [
+                              "Radios"
+                          ]
+                      }
+                  },
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "背景是否覆盖顶部",
+                          "id": "containTop",
+                          "max": 1000,
+                          "min": 0,
+                          "defaultValue": false
+                      }
+                  },
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "分享标题",
+                          "id": "shareTitle",
+                          "rules":{
+                            "max": 50
+                          }
+                      }
+                  },
+                  {
+                      "type": "String",
+                      "controlItemParam": {
+                          "label": "页面描述",
+                          "id": "describeTitle",
+                          "rules":{
+                            "max": 50
+                          }
+                      }
+                  },
+                  {
+                      "type": "Upload",
+                      "controlItemParam": {
+                          "id": "shareImg",
+                          "label": "分享图标",
+                          "type": "img",
+                          "limit": 1,
+                          "url": "xxx"
+                      }
+                  },
+                  {
+                      "type": "Switch",
+                      "controlItemParam": {
+                          "label": "底部导航是否显示",
+                          "id": "showTabBar",
+                          "defaultValue": true
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}

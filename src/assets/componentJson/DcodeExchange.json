@@ -1,0 +1,144 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+      "params": [
+          {
+              "templateId": "main",
+              "label": "兑换券配置",
+              "mode": "form",
+              "id": "_main"
+          }
+      ],
+      "resources": [
+          {
+              "templateId": "main",
+              "noSymbol": true,
+              "formItems": [],
+              "children": [
+                  {
+                      "type": "Remote",
+                      "label": "选择优惠券",
+                      "text": "优惠券",
+                      "activeType": "data",
+                      "id": "coupons",
+                      "inline": true,
+                      "inputParams": {
+                          "type": "dashed",
+                          "icon": "plus",
+                          "size": "large"
+                      },
+                      "popupParam": {
+                          "width": 900
+                      },
+                      "listPage": {
+                          "requestParam": {
+                            "options":{
+                              "collectionMethod": 1,
+                              "couponTemplateStatus": 20,
+                              "couponCategory": 40
+                            },
+                            "url":"/api/promotion/v1/marketing/coupon/template/list"
+                          },
+                          "tableParam": {
+                              "rowKey": "id",
+                              "rowSelection": {
+                                  "type": "checkbox"
+                              },
+                              "columns": [
+                                  {
+                                      "title": "优惠券名称",
+                                      "dataIndex": "couponName"
+                                  },
+                                  {
+                                      "title": "优惠类型",
+                                      "dataIndex": "couponCategory",
+                                      "render": {
+                                          "type": "enum",
+                                          "enumValues": {
+                                                "10": "满减",
+                                                "50": "满折"
+                                            }
+                                        }
+                                  },
+                                  {
+                                      "title": "活动标签",
+                                      "dataIndex": "tag",
+                                      "width": 80
+                                  },
+                                  {
+                                      "title": "面值",
+                                      "dataIndex": "couponValue"
+                                  },
+                                  {
+                                      "title": "领取方式",
+                                      "dataIndex": "collectionMethod",
+                                      "render": {
+                                          "type": "enum",
+                                          "enumValues": {
+                                            "1": "公开领取",
+                                            "2": "手工发放"
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "title": "优惠券状态",
+                                      "dataIndex": "couponTemplateStatus",
+                                      "render": {
+                                          "type": "enum",
+                                          "enumValues": {
+                                            "20": "已激活",
+                                            "30": "已停用",
+                                            "40": "已作废"
+                                          }
+                                      }
+                                  }
+                              ]
+                          },
+                          "panelParam": {
+                              "load": null,
+                              "change": null,
+                              "submit": null,
+                              "btns": [],
+                              "items": [
+                                  {
+                                      "type": "String",
+                                      "controlItemParam": {
+                                          "id": "couponName",
+                                          "label": "优惠券名称",
+                                          "defaultValue": "",
+                                          "rules":{
+                                              "max": 50
+                                          }
+                                      }
+                                  }
+                              ],
+                              "layout": 0,
+                              "maxCount": 0,
+                              "rowParam": {},
+                              "values": null,
+                              "dynamicForm": {},
+                              "requestParam": null
+                          }
+                      },
+                      "template": {
+                          "couponName": "couponName",
+                          "couponValue": "couponValue",
+                          "couponCategory": "couponCategory",
+                          "tag": "tag",
+                          "activityId": "activityId",
+                          "text": "couponName"
+                      },
+                      "textParam": {
+                          "controlType": "Tag",
+                          "closable": false,
+                          "styleParam": {
+                              "size": "large"
+                          }
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}
